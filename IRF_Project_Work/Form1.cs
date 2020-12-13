@@ -24,7 +24,9 @@ namespace IRF_Project_Work
 
         private void btn_GO_Click(object sender, EventArgs e)
         {
-
+            Result_Form f1 = new Result_Form();
+            f1.Show();
+          
         }
 
         private void radioBtn_ID_CheckedChanged(object sender, EventArgs e)

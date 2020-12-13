@@ -20,7 +20,7 @@ namespace IRF_Project_Work
 
         public Result_Form()
         {
-
+            
             InitializeComponent();
             GetCurrentExchangeRates();
             mngRateDataGridView.DataSource = Rates;
@@ -36,25 +36,42 @@ namespace IRF_Project_Work
             var xml = new XmlDocument();
             xml.LoadXml(result);
 
-            foreach ( XmlElement element in xml.DocumentElement)
+
+
+
+            foreach (XmlElement element in xml.DocumentElement)
             {
-                var rate = new RateData();
-                Rates.Add(rate);
-
-                rate.Date = DateTime.Today;
                 
-                var childElement = (XmlElement)element.ChildNodes[0];
-                rate.Currency = childElement.GetAttribute("curr");
 
-                var unit = decimal.Parse(childElement.GetAttribute("unit"));
-                var value = decimal.Parse(childElement.InnerText);
-                if (unit !=1)
+                
+
+                foreach (XmlElement item in element.ChildNodes)
                 {
-                    rate.Value = value / unit;
+                    var rate = new RateData();
+                    Rates.Add(rate);
+
+                    rate.Date = DateTime.Today;
+                    rate.Currency = item.GetAttribute("curr");
+
+                    var unit = decimal.Parse(item.GetAttribute("unit"));
+                    var value = decimal.Parse(item.InnerText.ToString().Replace(',', '.'));
+                    if (unit != 0)
+                    {
+                        rate.Value = value / unit;
+                    }
                 }
+                //var childElement = (XmlElement)element.ChildNodes[0];
+                //rate.Currency = childElement.GetAttribute("curr");
+
+                //var unit = decimal.Parse(childElement.GetAttribute("unit"));
+                //var value = decimal.Parse(childElement.InnerText.ToString().Replace(',', '.'));
+                //if (unit != 0)
+                //{
+                //    rate.Value = value / unit;
+                //}
             }
-            
-           
+
+
 
         }
         private void Result_Form_Load(object sender, EventArgs e)
