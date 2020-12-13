@@ -49,6 +49,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.mngRateDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.mngRateDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -263,11 +265,23 @@
             this.label21.TabIndex = 20;
             this.label21.Text = "Mai Forint Árfolyamok";
             // 
+            // mngRateDataGridView
+            // 
+            this.mngRateDataGridView.AllowUserToAddRows = false;
+            this.mngRateDataGridView.AllowUserToDeleteRows = false;
+            this.mngRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mngRateDataGridView.Location = new System.Drawing.Point(565, 371);
+            this.mngRateDataGridView.Name = "mngRateDataGridView";
+            this.mngRateDataGridView.ReadOnly = true;
+            this.mngRateDataGridView.Size = new System.Drawing.Size(240, 150);
+            this.mngRateDataGridView.TabIndex = 21;
+            // 
             // Result_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 657);
+            this.Controls.Add(this.mngRateDataGridView);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
@@ -291,6 +305,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Result_Form";
             this.Text = "Service Result";
+            this.Load += new System.EventHandler(this.Result_Form_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.mngRateDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,5 +335,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.DataGridView mngRateDataGridView;
     }
 }
