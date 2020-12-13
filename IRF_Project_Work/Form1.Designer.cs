@@ -41,6 +41,10 @@
             this.engFlag_CBox = new System.Windows.Forms.CheckBox();
             this.gerFlag_CBox = new System.Windows.Forms.CheckBox();
             this.hunFlag_CBox = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.stand_Unit_CBox = new System.Windows.Forms.CheckBox();
+            this.imp_Unit_CBox = new System.Windows.Forms.CheckBox();
+            this.metric_Unit_CBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // MainLabel
@@ -180,11 +184,64 @@
             this.hunFlag_CBox.UseVisualStyleBackColor = true;
             this.hunFlag_CBox.CheckedChanged += new System.EventHandler(this.hunFlag_CBox_CheckedChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(526, 174);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 25);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Mérési egység:";
+            this.label1.UseMnemonic = false;
+            // 
+            // stand_Unit_CBox
+            // 
+            this.stand_Unit_CBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.stand_Unit_CBox.AutoSize = true;
+            this.stand_Unit_CBox.Location = new System.Drawing.Point(514, 236);
+            this.stand_Unit_CBox.Name = "stand_Unit_CBox";
+            this.stand_Unit_CBox.Size = new System.Drawing.Size(60, 23);
+            this.stand_Unit_CBox.TabIndex = 13;
+            this.stand_Unit_CBox.Text = "Standard";
+            this.stand_Unit_CBox.UseVisualStyleBackColor = true;
+            this.stand_Unit_CBox.CheckedChanged += new System.EventHandler(this.stand_Unit_CBox_CheckedChanged);
+            // 
+            // imp_Unit_CBox
+            // 
+            this.imp_Unit_CBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.imp_Unit_CBox.AutoSize = true;
+            this.imp_Unit_CBox.Location = new System.Drawing.Point(591, 236);
+            this.imp_Unit_CBox.Name = "imp_Unit_CBox";
+            this.imp_Unit_CBox.Size = new System.Drawing.Size(60, 23);
+            this.imp_Unit_CBox.TabIndex = 14;
+            this.imp_Unit_CBox.Text = "Imperiális";
+            this.imp_Unit_CBox.UseVisualStyleBackColor = true;
+            this.imp_Unit_CBox.CheckedChanged += new System.EventHandler(this.imp_Unit_CBox_CheckedChanged);
+            // 
+            // metric_Unit_CBox
+            // 
+            this.metric_Unit_CBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.metric_Unit_CBox.AutoSize = true;
+            this.metric_Unit_CBox.Checked = true;
+            this.metric_Unit_CBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.metric_Unit_CBox.Location = new System.Drawing.Point(666, 236);
+            this.metric_Unit_CBox.Name = "metric_Unit_CBox";
+            this.metric_Unit_CBox.Size = new System.Drawing.Size(57, 23);
+            this.metric_Unit_CBox.TabIndex = 15;
+            this.metric_Unit_CBox.Text = "Metrikus";
+            this.metric_Unit_CBox.UseVisualStyleBackColor = true;
+            this.metric_Unit_CBox.CheckedChanged += new System.EventHandler(this.metric_Unit_CBox_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.metric_Unit_CBox);
+            this.Controls.Add(this.imp_Unit_CBox);
+            this.Controls.Add(this.stand_Unit_CBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.engFlag_CBox);
             this.Controls.Add(this.gerFlag_CBox);
             this.Controls.Add(this.hunFlag_CBox);
@@ -219,6 +276,10 @@
         private System.Windows.Forms.CheckBox hunFlag_CBox;
         private System.Windows.Forms.CheckBox gerFlag_CBox;
         private System.Windows.Forms.CheckBox engFlag_CBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox stand_Unit_CBox;
+        private System.Windows.Forms.CheckBox imp_Unit_CBox;
+        private System.Windows.Forms.CheckBox metric_Unit_CBox;
     }
 }
 

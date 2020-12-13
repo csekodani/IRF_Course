@@ -72,5 +72,23 @@ namespace IRF_Project_Work
             if (hunFlag_CBox.Checked) { hunFlag_CBox.Checked = false; }
             if (gerFlag_CBox.Checked) { gerFlag_CBox.Checked = false; }
         }
+
+        private void stand_Unit_CBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (imp_Unit_CBox.Checked) imp_Unit_CBox.Checked = false;
+            if (metric_Unit_CBox.Checked) metric_Unit_CBox.Checked = false;
+        }
+
+        private void imp_Unit_CBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (stand_Unit_CBox.Checked) stand_Unit_CBox.Checked = false;
+            if (metric_Unit_CBox.Checked) metric_Unit_CBox.Checked = false;
+        }
+
+        private void metric_Unit_CBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (imp_Unit_CBox.Checked) imp_Unit_CBox.Checked = false;
+            if (stand_Unit_CBox.Checked) stand_Unit_CBox.Checked = false;
+        }
     }
 }
