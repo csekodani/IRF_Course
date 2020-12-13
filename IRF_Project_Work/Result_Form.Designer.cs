@@ -50,6 +50,8 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.mngRateDataGridView = new System.Windows.Forms.DataGridView();
+            this.fxSearchTB = new System.Windows.Forms.TextBox();
+            this.fxSearchLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.mngRateDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -259,7 +261,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label21.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label21.Location = new System.Drawing.Point(559, 290);
+            this.label21.Location = new System.Drawing.Point(503, 261);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(298, 31);
             this.label21.TabIndex = 20;
@@ -270,18 +272,38 @@
             this.mngRateDataGridView.AllowUserToAddRows = false;
             this.mngRateDataGridView.AllowUserToDeleteRows = false;
             this.mngRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.mngRateDataGridView.Location = new System.Drawing.Point(548, 367);
+            this.mngRateDataGridView.Location = new System.Drawing.Point(689, 340);
             this.mngRateDataGridView.Name = "mngRateDataGridView";
             this.mngRateDataGridView.ReadOnly = true;
             this.mngRateDataGridView.RowHeadersVisible = false;
-            this.mngRateDataGridView.Size = new System.Drawing.Size(318, 278);
+            this.mngRateDataGridView.Size = new System.Drawing.Size(192, 303);
             this.mngRateDataGridView.TabIndex = 21;
+            // 
+            // fxSearchTB
+            // 
+            this.fxSearchTB.Location = new System.Drawing.Point(523, 378);
+            this.fxSearchTB.Name = "fxSearchTB";
+            this.fxSearchTB.Size = new System.Drawing.Size(100, 20);
+            this.fxSearchTB.TabIndex = 22;
+            this.fxSearchTB.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // fxSearchLabel
+            // 
+            this.fxSearchLabel.AutoSize = true;
+            this.fxSearchLabel.Location = new System.Drawing.Point(549, 418);
+            this.fxSearchLabel.Name = "fxSearchLabel";
+            this.fxSearchLabel.Size = new System.Drawing.Size(41, 13);
+            this.fxSearchLabel.TabIndex = 23;
+            this.fxSearchLabel.Text = "label22";
+            this.fxSearchLabel.Visible = false;
             // 
             // Result_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 657);
+            this.Controls.Add(this.fxSearchLabel);
+            this.Controls.Add(this.fxSearchTB);
             this.Controls.Add(this.mngRateDataGridView);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
@@ -337,5 +359,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.DataGridView mngRateDataGridView;
+        private System.Windows.Forms.TextBox fxSearchTB;
+        private System.Windows.Forms.Label fxSearchLabel;
     }
 }

@@ -18,6 +18,7 @@ namespace IRF_Project_Work
         BindingList<RateData> Rates = new BindingList<RateData>();
         
 
+
         public Result_Form()
         {
             
@@ -25,7 +26,7 @@ namespace IRF_Project_Work
             GetCurrentExchangeRates();
             mngRateDataGridView.DataSource = Rates;
         }
-
+        
         public void GetCurrentExchangeRates()
         {
             var mnbService = new MNBArfolyamServiceSoapClient();
@@ -52,7 +53,6 @@ namespace IRF_Project_Work
                     var rate = new RateData();
                     Rates.Add(rate);
 
-                    rate.Date = DateTime.Today;
                     rate.Currency = item.GetAttribute("curr");
 
                     var unit = decimal.Parse(item.GetAttribute("unit"));
@@ -71,6 +71,14 @@ namespace IRF_Project_Work
         private void Result_Form_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            foreach  (RateData item in Rates)
+            {
+                if (item.Currency == fxSearchTB.Text.ToUpper()) { fxSearchLabel.Visible = true; fxSearchLabel.Text = item.Value.ToString(); }
+            }
         }
     }
 }
