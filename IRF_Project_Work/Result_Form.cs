@@ -10,23 +10,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace IRF_Project_Work
 {
     public partial class Result_Form : Form
     {
         BindingList<RateData> Rates = new BindingList<RateData>();
-        
+        BindingList<NameDay> NameDays = new BindingList<NameDay>();
+
 
 
         public Result_Form()
         {
             
             InitializeComponent();
+            FillNameDayList();
             GetCurrentExchangeRates();
             mngRateDataGridView.DataSource = Rates;
         }
         
+        public void FillNameDayList()
+        {
+            XElement nevnapXML = XElement.Load(@"nevnapok.xml");
+
+        }
         public void GetCurrentExchangeRates()
         {
             var mnbService = new MNBArfolyamServiceSoapClient();

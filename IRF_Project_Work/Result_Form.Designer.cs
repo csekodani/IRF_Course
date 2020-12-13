@@ -54,6 +54,7 @@
             this.fxSearchLabel = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.NevLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.mngRateDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -278,7 +279,7 @@
             this.mngRateDataGridView.Name = "mngRateDataGridView";
             this.mngRateDataGridView.ReadOnly = true;
             this.mngRateDataGridView.RowHeadersVisible = false;
-            this.mngRateDataGridView.Size = new System.Drawing.Size(206, 303);
+            this.mngRateDataGridView.Size = new System.Drawing.Size(215, 303);
             this.mngRateDataGridView.TabIndex = 21;
             // 
             // fxSearchTB
@@ -322,11 +323,24 @@
             this.label23.TabIndex = 25;
             this.label23.Text = "Valuta kereső";
             // 
+            // NevLabel
+            // 
+            this.NevLabel.AutoSize = true;
+            this.NevLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NevLabel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.NevLabel.Location = new System.Drawing.Point(685, 77);
+            this.NevLabel.Name = "NevLabel";
+            this.NevLabel.Size = new System.Drawing.Size(42, 22);
+            this.NevLabel.TabIndex = 26;
+            this.NevLabel.Text = "Nev";
+            this.NevLabel.Visible = false;
+            // 
             // Result_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 657);
+            this.ClientSize = new System.Drawing.Size(916, 657);
+            this.Controls.Add(this.NevLabel);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.fxSearchLabel);
@@ -390,5 +404,6 @@
         private System.Windows.Forms.Label fxSearchLabel;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label NevLabel;
     }
 }
