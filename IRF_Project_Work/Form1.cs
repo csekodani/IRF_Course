@@ -54,5 +54,23 @@ namespace IRF_Project_Work
         {
 
         }
+
+        private void hunLang_TBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (gerFlag_TBox.Checked){ gerFlag_TBox.Checked = false; }
+            if (engFlag_TBox.Checked) { engFlag_TBox.Checked = false; }
+        }
+
+        private void gerFlag_TBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (engFlag_TBox.Checked) { engFlag_TBox.Checked = false; }
+            if (hunLang_TBox.Checked) { hunLang_TBox.Checked = false; }
+        }
+
+        private void engFlag_TBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (hunLang_TBox.Checked) { hunLang_TBox.Checked = false; }
+            if (gerFlag_TBox.Checked) { gerFlag_TBox.Checked = false; }
+        }
     }
 }

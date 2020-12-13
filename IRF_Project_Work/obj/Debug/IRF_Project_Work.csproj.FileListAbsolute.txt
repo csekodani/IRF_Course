@@ -18,3 +18,6 @@ C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_
 C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.csproj.CoreCompileInputs.cache
 C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.exe
 C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.pdb
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\Pictures\gerFlag.png
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\Pictures\hunFlag.png
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\Pictures\usFlag.jpg

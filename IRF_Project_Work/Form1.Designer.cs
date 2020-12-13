@@ -38,7 +38,9 @@
             this.textBox_Name = new System.Windows.Forms.TextBox();
             this.btn_GO = new System.Windows.Forms.Button();
             this.languageLabel = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.engFlag_TBox = new System.Windows.Forms.CheckBox();
+            this.gerFlag_TBox = new System.Windows.Forms.CheckBox();
+            this.hunLang_TBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // MainLabel
@@ -131,23 +133,61 @@
             this.languageLabel.Text = "Lekérdezés nyelve:";
             this.languageLabel.UseMnemonic = false;
             // 
-            // checkBox1
+            // engFlag_TBox
             // 
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkBox1.BackgroundImage")));
-            this.checkBox1.Location = new System.Drawing.Point(546, 97);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(71, 48);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.engFlag_TBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.engFlag_TBox.BackgroundImage = global::IRF_Project_Work.Properties.Resources.usFlag;
+            this.engFlag_TBox.Checked = true;
+            this.engFlag_TBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.engFlag_TBox.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.engFlag_TBox.FlatAppearance.BorderSize = 4;
+            this.engFlag_TBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
+            this.engFlag_TBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.engFlag_TBox.Location = new System.Drawing.Point(660, 88);
+            this.engFlag_TBox.Name = "engFlag_TBox";
+            this.engFlag_TBox.Size = new System.Drawing.Size(63, 44);
+            this.engFlag_TBox.TabIndex = 11;
+            this.engFlag_TBox.UseVisualStyleBackColor = true;
+            this.engFlag_TBox.CheckedChanged += new System.EventHandler(this.engFlag_TBox_CheckedChanged);
+            // 
+            // gerFlag_TBox
+            // 
+            this.gerFlag_TBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.gerFlag_TBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gerFlag_TBox.BackgroundImage")));
+            this.gerFlag_TBox.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.gerFlag_TBox.FlatAppearance.BorderSize = 4;
+            this.gerFlag_TBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
+            this.gerFlag_TBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.gerFlag_TBox.Location = new System.Drawing.Point(588, 88);
+            this.gerFlag_TBox.Name = "gerFlag_TBox";
+            this.gerFlag_TBox.Size = new System.Drawing.Size(65, 44);
+            this.gerFlag_TBox.TabIndex = 10;
+            this.gerFlag_TBox.UseVisualStyleBackColor = true;
+            this.gerFlag_TBox.CheckedChanged += new System.EventHandler(this.gerFlag_TBox_CheckedChanged);
+            // 
+            // hunLang_TBox
+            // 
+            this.hunLang_TBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.hunLang_TBox.BackgroundImage = global::IRF_Project_Work.Properties.Resources.hunFlag;
+            this.hunLang_TBox.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.hunLang_TBox.FlatAppearance.BorderSize = 4;
+            this.hunLang_TBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
+            this.hunLang_TBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.hunLang_TBox.Location = new System.Drawing.Point(517, 88);
+            this.hunLang_TBox.Name = "hunLang_TBox";
+            this.hunLang_TBox.Size = new System.Drawing.Size(65, 44);
+            this.hunLang_TBox.TabIndex = 9;
+            this.hunLang_TBox.UseVisualStyleBackColor = true;
+            this.hunLang_TBox.CheckedChanged += new System.EventHandler(this.hunLang_TBox_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.engFlag_TBox);
+            this.Controls.Add(this.gerFlag_TBox);
+            this.Controls.Add(this.hunLang_TBox);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.btn_GO);
             this.Controls.Add(this.textBox_Name);
@@ -176,7 +216,9 @@
         private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.Button btn_GO;
         private System.Windows.Forms.Label languageLabel;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox hunLang_TBox;
+        private System.Windows.Forms.CheckBox gerFlag_TBox;
+        private System.Windows.Forms.CheckBox engFlag_TBox;
     }
 }
 

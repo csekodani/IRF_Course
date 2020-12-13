@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="gerFlag_TBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGMAAAAyCAYAAABI6WXHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        iVBORw0KGgoAAAANSUhEUgAAAFAAAAAwCAYAAACG5f33AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
-        TUUH4gYEEx00V8L3XgAAAKRJREFUeF7t0TERwgAQAMHXExE01NECCiiocBFFSEDLY+OKvZlTsPM9buvG
-        MELDCA0jNIzQMELDCA0jNIzQMELDCA0jNIzQMELDCA0j9Pyer3XjWWWCEQpGKBihYISCEQpGKBihYISC
-        EQpGKBihYISCEQpGKBih5n191o3n/jjXjWGEhhEaRmgYoWGEhhEaRmgYoWGEhhEaRmgYoWGEhhEaRuZz
-        /6n0usPOJxQOAAAAAElFTkSuQmCC
+        TUUH4QgKCRgvaBpXrQAAAJRJREFUaEPt0LENw0AMBMHvvzh34FpeKoABoU2HwDC4cM97l2Qc2RtH9saR
+        vXFkbxzZG0f2xpG9cWRvHNkbR/bGkb1xZG8c2RtH9saRrf/7+E7ASMBIwEjASMBIwEjASMBIwEjASMBI
+        wEjASMBIwOjc37l8J2AkYCRgJGAkYCRgJGAkYCRgJGAkYCRgJGAkYCRgcu4DQYNEpbq0PZgAAAAASUVO
+        RK5CYII=
 </value>
   </data>
 </root>
