@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.MainLabel = new System.Windows.Forms.Label();
             this.radioBtn_ID = new System.Windows.Forms.RadioButton();
             this.radioBtn_Coord = new System.Windows.Forms.RadioButton();
@@ -36,6 +37,8 @@
             this.textBox_Coord = new System.Windows.Forms.TextBox();
             this.textBox_Name = new System.Windows.Forms.TextBox();
             this.btn_GO = new System.Windows.Forms.Button();
+            this.languageLabel = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // MainLabel
@@ -117,11 +120,35 @@
             this.btn_GO.UseVisualStyleBackColor = true;
             this.btn_GO.Click += new System.EventHandler(this.btn_GO_Click);
             // 
+            // languageLabel
+            // 
+            this.languageLabel.AutoSize = true;
+            this.languageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.languageLabel.Location = new System.Drawing.Point(541, 28);
+            this.languageLabel.Name = "languageLabel";
+            this.languageLabel.Size = new System.Drawing.Size(182, 25);
+            this.languageLabel.TabIndex = 8;
+            this.languageLabel.Text = "Lekérdezés nyelve:";
+            this.languageLabel.UseMnemonic = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkBox1.BackgroundImage")));
+            this.checkBox1.Location = new System.Drawing.Point(546, 97);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(71, 48);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.btn_GO);
             this.Controls.Add(this.textBox_Name);
             this.Controls.Add(this.textBox_Coord);
@@ -148,6 +175,8 @@
         private System.Windows.Forms.TextBox textBox_Coord;
         private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.Button btn_GO;
+        private System.Windows.Forms.Label languageLabel;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

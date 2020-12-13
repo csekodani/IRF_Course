@@ -49,5 +49,10 @@ namespace IRF_Project_Work
             textBox_Coord.Visible = false;
             textBox_Name.Visible = true;
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

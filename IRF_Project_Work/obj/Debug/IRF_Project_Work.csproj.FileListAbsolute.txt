@@ -8,3 +8,13 @@ C:\Users\Cs_Dani\source\repos\IRF_Project_Work\obj\Debug\IRF_Project_Work.csproj
 C:\Users\Cs_Dani\source\repos\IRF_Project_Work\obj\Debug\IRF_Project_Work.csproj.CoreCompileInputs.cache
 C:\Users\Cs_Dani\source\repos\IRF_Project_Work\obj\Debug\IRF_Project_Work.exe
 C:\Users\Cs_Dani\source\repos\IRF_Project_Work\obj\Debug\IRF_Project_Work.pdb
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\IRF_Project_Work.exe.config
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\IRF_Project_Work.exe
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\IRF_Project_Work.pdb
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.csprojAssemblyReference.cache
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.Form1.resources
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.Properties.Resources.resources
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.csproj.GenerateResource.cache
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.csproj.CoreCompileInputs.cache
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.exe
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.pdb
