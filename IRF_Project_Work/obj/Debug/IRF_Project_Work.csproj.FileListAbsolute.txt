@@ -21,3 +21,4 @@ C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_
 C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\Pictures\gerFlag.png
 C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\Pictures\hunFlag.png
 C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\bin\Debug\Pictures\usFlag.jpg
+C:\Users\Cs_Dani\source\repos\IRF_Course\IRF_Project_Work\obj\Debug\IRF_Project_Work.Result_Form.resources

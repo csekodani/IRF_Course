@@ -53,10 +53,7 @@ namespace IRF_Project_Work
             textBox_Name.Visible = true;
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void hunFlag_CBox_CheckedChanged(object sender, EventArgs e)
         {
