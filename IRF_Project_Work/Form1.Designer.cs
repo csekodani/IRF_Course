@@ -121,9 +121,9 @@
             // btn_GO
             // 
             this.btn_GO.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_GO.Location = new System.Drawing.Point(610, 333);
+            this.btn_GO.Location = new System.Drawing.Point(450, 258);
             this.btn_GO.Name = "btn_GO";
-            this.btn_GO.Size = new System.Drawing.Size(75, 48);
+            this.btn_GO.Size = new System.Drawing.Size(106, 50);
             this.btn_GO.TabIndex = 7;
             this.btn_GO.Text = "Go";
             this.btn_GO.UseVisualStyleBackColor = true;
@@ -133,7 +133,7 @@
             // 
             this.languageLabel.AutoSize = true;
             this.languageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.languageLabel.Location = new System.Drawing.Point(110, 252);
+            this.languageLabel.Location = new System.Drawing.Point(417, 40);
             this.languageLabel.Name = "languageLabel";
             this.languageLabel.Size = new System.Drawing.Size(182, 25);
             this.languageLabel.TabIndex = 8;
@@ -150,7 +150,7 @@
             this.engFlag_CBox.FlatAppearance.BorderSize = 4;
             this.engFlag_CBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
             this.engFlag_CBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.engFlag_CBox.Location = new System.Drawing.Point(244, 312);
+            this.engFlag_CBox.Location = new System.Drawing.Point(551, 100);
             this.engFlag_CBox.Name = "engFlag_CBox";
             this.engFlag_CBox.Size = new System.Drawing.Size(63, 44);
             this.engFlag_CBox.TabIndex = 11;
@@ -165,7 +165,7 @@
             this.gerFlag_CBox.FlatAppearance.BorderSize = 4;
             this.gerFlag_CBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
             this.gerFlag_CBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.gerFlag_CBox.Location = new System.Drawing.Point(172, 312);
+            this.gerFlag_CBox.Location = new System.Drawing.Point(479, 100);
             this.gerFlag_CBox.Name = "gerFlag_CBox";
             this.gerFlag_CBox.Size = new System.Drawing.Size(65, 44);
             this.gerFlag_CBox.TabIndex = 10;
@@ -180,7 +180,7 @@
             this.hunFlag_CBox.FlatAppearance.BorderSize = 4;
             this.hunFlag_CBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
             this.hunFlag_CBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.hunFlag_CBox.Location = new System.Drawing.Point(101, 312);
+            this.hunFlag_CBox.Location = new System.Drawing.Point(408, 100);
             this.hunFlag_CBox.Name = "hunFlag_CBox";
             this.hunFlag_CBox.Size = new System.Drawing.Size(65, 44);
             this.hunFlag_CBox.TabIndex = 9;
@@ -191,7 +191,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(542, 29);
+            this.label1.Location = new System.Drawing.Point(57, 223);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 25);
             this.label1.TabIndex = 12;
@@ -202,7 +202,7 @@
             // 
             this.stand_Unit_CBox.Appearance = System.Windows.Forms.Appearance.Button;
             this.stand_Unit_CBox.AutoSize = true;
-            this.stand_Unit_CBox.Location = new System.Drawing.Point(530, 91);
+            this.stand_Unit_CBox.Location = new System.Drawing.Point(45, 285);
             this.stand_Unit_CBox.Name = "stand_Unit_CBox";
             this.stand_Unit_CBox.Size = new System.Drawing.Size(60, 23);
             this.stand_Unit_CBox.TabIndex = 13;
@@ -214,7 +214,7 @@
             // 
             this.imp_Unit_CBox.Appearance = System.Windows.Forms.Appearance.Button;
             this.imp_Unit_CBox.AutoSize = true;
-            this.imp_Unit_CBox.Location = new System.Drawing.Point(607, 91);
+            this.imp_Unit_CBox.Location = new System.Drawing.Point(122, 285);
             this.imp_Unit_CBox.Name = "imp_Unit_CBox";
             this.imp_Unit_CBox.Size = new System.Drawing.Size(60, 23);
             this.imp_Unit_CBox.TabIndex = 14;
@@ -228,7 +228,7 @@
             this.metric_Unit_CBox.AutoSize = true;
             this.metric_Unit_CBox.Checked = true;
             this.metric_Unit_CBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.metric_Unit_CBox.Location = new System.Drawing.Point(682, 91);
+            this.metric_Unit_CBox.Location = new System.Drawing.Point(197, 285);
             this.metric_Unit_CBox.Name = "metric_Unit_CBox";
             this.metric_Unit_CBox.Size = new System.Drawing.Size(57, 23);
             this.metric_Unit_CBox.TabIndex = 15;
@@ -249,7 +249,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 420);
+            this.ClientSize = new System.Drawing.Size(636, 354);
             this.Controls.Add(this.textBox_Coord_Lat);
             this.Controls.Add(this.metric_Unit_CBox);
             this.Controls.Add(this.imp_Unit_CBox);
