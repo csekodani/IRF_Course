@@ -41,7 +41,9 @@ namespace IRF_Project_Work
 
             foreach (XmlElement element in xml.DocumentElement)
             {
-                
+                //DocumentElement - MNBCurrentExchangeRates
+                //element         - Day (has only 1 attribute (current date))
+                // element childNodes - Rate (every Rate is a node with attributes )
 
                 
 
@@ -54,21 +56,13 @@ namespace IRF_Project_Work
                     rate.Currency = item.GetAttribute("curr");
 
                     var unit = decimal.Parse(item.GetAttribute("unit"));
-                    var value = decimal.Parse(item.InnerText.ToString().Replace(',', '.'));
+                    var value = decimal.Parse(item.InnerText.ToString().Replace(',', '.')); //default separator conflict
                     if (unit != 0)
                     {
                         rate.Value = value / unit;
                     }
                 }
-                //var childElement = (XmlElement)element.ChildNodes[0];
-                //rate.Currency = childElement.GetAttribute("curr");
-
-                //var unit = decimal.Parse(childElement.GetAttribute("unit"));
-                //var value = decimal.Parse(childElement.InnerText.ToString().Replace(',', '.'));
-                //if (unit != 0)
-                //{
-                //    rate.Value = value / unit;
-                //}
+                
             }
 
 

@@ -270,10 +270,11 @@
             this.mngRateDataGridView.AllowUserToAddRows = false;
             this.mngRateDataGridView.AllowUserToDeleteRows = false;
             this.mngRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.mngRateDataGridView.Location = new System.Drawing.Point(565, 371);
+            this.mngRateDataGridView.Location = new System.Drawing.Point(548, 367);
             this.mngRateDataGridView.Name = "mngRateDataGridView";
             this.mngRateDataGridView.ReadOnly = true;
-            this.mngRateDataGridView.Size = new System.Drawing.Size(240, 150);
+            this.mngRateDataGridView.RowHeadersVisible = false;
+            this.mngRateDataGridView.Size = new System.Drawing.Size(318, 278);
             this.mngRateDataGridView.TabIndex = 21;
             // 
             // Result_Form
