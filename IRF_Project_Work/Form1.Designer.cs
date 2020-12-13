@@ -34,7 +34,7 @@
             this.radioBtn_Coord = new System.Windows.Forms.RadioButton();
             this.radioBtn_Name = new System.Windows.Forms.RadioButton();
             this.textBox_ID = new System.Windows.Forms.TextBox();
-            this.textBox_Coord = new System.Windows.Forms.TextBox();
+            this.textBox_Coord_Long = new System.Windows.Forms.TextBox();
             this.textBox_Name = new System.Windows.Forms.TextBox();
             this.btn_GO = new System.Windows.Forms.Button();
             this.languageLabel = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@
             this.stand_Unit_CBox = new System.Windows.Forms.CheckBox();
             this.imp_Unit_CBox = new System.Windows.Forms.CheckBox();
             this.metric_Unit_CBox = new System.Windows.Forms.CheckBox();
+            this.textBox_Coord_Lat = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // MainLabel
@@ -101,12 +102,14 @@
             this.textBox_ID.Size = new System.Drawing.Size(100, 20);
             this.textBox_ID.TabIndex = 4;
             // 
-            // textBox_Coord
+            // textBox_Coord_Long
             // 
-            this.textBox_Coord.Location = new System.Drawing.Point(134, 112);
-            this.textBox_Coord.Name = "textBox_Coord";
-            this.textBox_Coord.Size = new System.Drawing.Size(100, 20);
-            this.textBox_Coord.TabIndex = 5;
+            this.textBox_Coord_Long.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox_Coord_Long.Location = new System.Drawing.Point(134, 113);
+            this.textBox_Coord_Long.Name = "textBox_Coord_Long";
+            this.textBox_Coord_Long.Size = new System.Drawing.Size(73, 20);
+            this.textBox_Coord_Long.TabIndex = 5;
+            this.textBox_Coord_Long.Text = "Hosszúság";
             // 
             // textBox_Name
             // 
@@ -118,7 +121,7 @@
             // btn_GO
             // 
             this.btn_GO.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_GO.Location = new System.Drawing.Point(694, 390);
+            this.btn_GO.Location = new System.Drawing.Point(610, 333);
             this.btn_GO.Name = "btn_GO";
             this.btn_GO.Size = new System.Drawing.Size(75, 48);
             this.btn_GO.TabIndex = 7;
@@ -130,7 +133,7 @@
             // 
             this.languageLabel.AutoSize = true;
             this.languageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.languageLabel.Location = new System.Drawing.Point(526, 28);
+            this.languageLabel.Location = new System.Drawing.Point(110, 252);
             this.languageLabel.Name = "languageLabel";
             this.languageLabel.Size = new System.Drawing.Size(182, 25);
             this.languageLabel.TabIndex = 8;
@@ -147,7 +150,7 @@
             this.engFlag_CBox.FlatAppearance.BorderSize = 4;
             this.engFlag_CBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
             this.engFlag_CBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.engFlag_CBox.Location = new System.Drawing.Point(660, 88);
+            this.engFlag_CBox.Location = new System.Drawing.Point(244, 312);
             this.engFlag_CBox.Name = "engFlag_CBox";
             this.engFlag_CBox.Size = new System.Drawing.Size(63, 44);
             this.engFlag_CBox.TabIndex = 11;
@@ -162,7 +165,7 @@
             this.gerFlag_CBox.FlatAppearance.BorderSize = 4;
             this.gerFlag_CBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
             this.gerFlag_CBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.gerFlag_CBox.Location = new System.Drawing.Point(588, 88);
+            this.gerFlag_CBox.Location = new System.Drawing.Point(172, 312);
             this.gerFlag_CBox.Name = "gerFlag_CBox";
             this.gerFlag_CBox.Size = new System.Drawing.Size(65, 44);
             this.gerFlag_CBox.TabIndex = 10;
@@ -177,7 +180,7 @@
             this.hunFlag_CBox.FlatAppearance.BorderSize = 4;
             this.hunFlag_CBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.MidnightBlue;
             this.hunFlag_CBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.hunFlag_CBox.Location = new System.Drawing.Point(517, 88);
+            this.hunFlag_CBox.Location = new System.Drawing.Point(101, 312);
             this.hunFlag_CBox.Name = "hunFlag_CBox";
             this.hunFlag_CBox.Size = new System.Drawing.Size(65, 44);
             this.hunFlag_CBox.TabIndex = 9;
@@ -188,7 +191,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(526, 174);
+            this.label1.Location = new System.Drawing.Point(542, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 25);
             this.label1.TabIndex = 12;
@@ -199,7 +202,7 @@
             // 
             this.stand_Unit_CBox.Appearance = System.Windows.Forms.Appearance.Button;
             this.stand_Unit_CBox.AutoSize = true;
-            this.stand_Unit_CBox.Location = new System.Drawing.Point(514, 236);
+            this.stand_Unit_CBox.Location = new System.Drawing.Point(530, 91);
             this.stand_Unit_CBox.Name = "stand_Unit_CBox";
             this.stand_Unit_CBox.Size = new System.Drawing.Size(60, 23);
             this.stand_Unit_CBox.TabIndex = 13;
@@ -211,7 +214,7 @@
             // 
             this.imp_Unit_CBox.Appearance = System.Windows.Forms.Appearance.Button;
             this.imp_Unit_CBox.AutoSize = true;
-            this.imp_Unit_CBox.Location = new System.Drawing.Point(591, 236);
+            this.imp_Unit_CBox.Location = new System.Drawing.Point(607, 91);
             this.imp_Unit_CBox.Name = "imp_Unit_CBox";
             this.imp_Unit_CBox.Size = new System.Drawing.Size(60, 23);
             this.imp_Unit_CBox.TabIndex = 14;
@@ -225,7 +228,7 @@
             this.metric_Unit_CBox.AutoSize = true;
             this.metric_Unit_CBox.Checked = true;
             this.metric_Unit_CBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.metric_Unit_CBox.Location = new System.Drawing.Point(666, 236);
+            this.metric_Unit_CBox.Location = new System.Drawing.Point(682, 91);
             this.metric_Unit_CBox.Name = "metric_Unit_CBox";
             this.metric_Unit_CBox.Size = new System.Drawing.Size(57, 23);
             this.metric_Unit_CBox.TabIndex = 15;
@@ -233,11 +236,21 @@
             this.metric_Unit_CBox.UseVisualStyleBackColor = true;
             this.metric_Unit_CBox.CheckedChanged += new System.EventHandler(this.metric_Unit_CBox_CheckedChanged);
             // 
+            // textBox_Coord_Lat
+            // 
+            this.textBox_Coord_Lat.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox_Coord_Lat.Location = new System.Drawing.Point(234, 112);
+            this.textBox_Coord_Lat.Name = "textBox_Coord_Lat";
+            this.textBox_Coord_Lat.Size = new System.Drawing.Size(73, 20);
+            this.textBox_Coord_Lat.TabIndex = 16;
+            this.textBox_Coord_Lat.Text = "Szélesség";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(751, 420);
+            this.Controls.Add(this.textBox_Coord_Lat);
             this.Controls.Add(this.metric_Unit_CBox);
             this.Controls.Add(this.imp_Unit_CBox);
             this.Controls.Add(this.stand_Unit_CBox);
@@ -248,14 +261,14 @@
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.btn_GO);
             this.Controls.Add(this.textBox_Name);
-            this.Controls.Add(this.textBox_Coord);
+            this.Controls.Add(this.textBox_Coord_Long);
             this.Controls.Add(this.textBox_ID);
             this.Controls.Add(this.radioBtn_Name);
             this.Controls.Add(this.radioBtn_Coord);
             this.Controls.Add(this.radioBtn_ID);
             this.Controls.Add(this.MainLabel);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Morning Starter App";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -269,7 +282,7 @@
         private System.Windows.Forms.RadioButton radioBtn_Coord;
         private System.Windows.Forms.RadioButton radioBtn_Name;
         private System.Windows.Forms.TextBox textBox_ID;
-        private System.Windows.Forms.TextBox textBox_Coord;
+        private System.Windows.Forms.TextBox textBox_Coord_Long;
         private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.Button btn_GO;
         private System.Windows.Forms.Label languageLabel;
@@ -280,6 +293,7 @@
         private System.Windows.Forms.CheckBox stand_Unit_CBox;
         private System.Windows.Forms.CheckBox imp_Unit_CBox;
         private System.Windows.Forms.CheckBox metric_Unit_CBox;
+        private System.Windows.Forms.TextBox textBox_Coord_Lat;
     }
 }
 

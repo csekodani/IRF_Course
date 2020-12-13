@@ -30,7 +30,8 @@ namespace IRF_Project_Work
         private void radioBtn_ID_CheckedChanged(object sender, EventArgs e)
         {
             textBox_ID.Visible = true;
-            textBox_Coord.Visible = false;
+            textBox_Coord_Long.Visible = false;
+            textBox_Coord_Lat.Visible = false;
             textBox_Name.Visible = false;
 
         }
@@ -38,7 +39,8 @@ namespace IRF_Project_Work
         private void radioBtn_Coord_CheckedChanged(object sender, EventArgs e)
         {
             textBox_ID.Visible = false;
-            textBox_Coord.Visible = true;
+            textBox_Coord_Long.Visible = true;
+            textBox_Coord_Lat.Visible = true;
             textBox_Name.Visible = false;
 
         }
@@ -46,7 +48,8 @@ namespace IRF_Project_Work
         private void radioBtn_Name_CheckedChanged(object sender, EventArgs e)
         {
             textBox_ID.Visible = false;
-            textBox_Coord.Visible = false;
+            textBox_Coord_Long.Visible = false;
+            textBox_Coord_Lat.Visible = false;
             textBox_Name.Visible = true;
         }
 
