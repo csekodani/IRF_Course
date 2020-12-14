@@ -34,13 +34,13 @@ namespace IRF_Project_Work
             mnbRateDataGridView.DataSource = Rates;
             
         }
-        public void LoadWeatherData()
+        public async void LoadWeatherData()
         {
             //run request, and get the response to resultWeather properties
 
-             var GotResponse = WeatherProcessor.LoadWeather("Budapest",LangChooser.Hungarian,UnitChooser.Standard);
+             var GotResponse = await WeatherProcessor.LoadWeather("Budapest",LangChooser.Hungarian,UnitChooser.Standard);
 
-        }
+         }
 
         public void DisplayWeather()
         {

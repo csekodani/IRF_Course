@@ -42,16 +42,16 @@ namespace IRF_Project_Work.RestAPI
             {
                 units = "standard";
             }
-            string url = $"http://api.openweathermap.org/data/2.5/weather?id={ id }&lang={ langMode }&units={ unit }&appid={ apiKey }";
+            string url = $"http://api.openweathermap.org/data/2.5/weather?id={ id }&mode=xml&lang={ langMode }&units={ unit }&appid={ apiKey }";
             using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
                 {
-                // there is a neet to make functions return to xml to be able to pass results to form 2
-                //need to get response oout of using, because it will terminate everything in it when it is done
+                string streamString;
                 if (response.IsSuccessStatusCode)
                     {
-                    myRestXML = await response.Content.ReadAsAsync<XmlDocument>();
+                    streamString = await response.Content.ReadAsStringAsync();
+                    myRestXML.LoadXml(streamString);
                     return myRestXML;
-                    }
+                }
                     else
                     {
                     throw new Exception(response.ReasonPhrase);
@@ -91,13 +91,14 @@ namespace IRF_Project_Work.RestAPI
             {
                 units = "standard";
             }
-            string url = $"http://api.openweathermap.org/data/2.5/weather?lat={ latit }&lon={longit}&lang={ langMode }&units={ unit }&appid={ apiKey }";
+            string url = $"http://api.openweathermap.org/data/2.5/weather?lat={ latit }&lon={longit}&lang={ langMode }&mode=xml&units={ unit }&appid={ apiKey }";
             using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
             {
-                
+                string streamString;
                 if (response.IsSuccessStatusCode)
                 {
-                    myRestXML = await response.Content.ReadAsAsync<XmlDocument>();
+                    streamString = await response.Content.ReadAsStringAsync();
+                    myRestXML.LoadXml(streamString);
                     return myRestXML;
                 }
                 else
@@ -138,14 +139,16 @@ namespace IRF_Project_Work.RestAPI
             {
                 langMode = "en";
             }
-            string url = $"http://api.openweathermap.org/data/2.5/weather?q={ City }&units={ unit }&lang={ langMode }&appid={ apiKey }";
+            string url = $"http://api.openweathermap.org/data/2.5/weather?q={ City }&units={ unit }&lang={ langMode }&mode=xml&appid={ apiKey }";
             using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
             {
+                string streamString;
                 // there is a neet to make functions return to xml to be able to pass results to form 2
                 //need to get response oout of using, because it will terminate everything in it when it is done
                 if (response.IsSuccessStatusCode)
                 {
-                    myRestXML = await response.Content.ReadAsAsync<XmlDocument>();
+                    streamString= await response.Content.ReadAsStringAsync();
+                    myRestXML.LoadXml(streamString);
                     return myRestXML;
                 }
                 else
