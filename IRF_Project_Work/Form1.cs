@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IRF_Project_Work.RestAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace IRF_Project_Work
 {
     public partial class Form1 : Form
     {
+        LangChooser languageChoice = LangChooser.Hungarian;
         public Form1()
         {
             InitializeComponent();
+            Api_Helper.InitializeClient();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,18 +64,22 @@ namespace IRF_Project_Work
         {
             if (gerFlag_CBox.Checked){ gerFlag_CBox.Checked = false; }
             if (engFlag_CBox.Checked) { engFlag_CBox.Checked = false; }
+            languageChoice = LangChooser.Hungarian;
+
         }
 
         private void gerFlag_CBox_CheckedChanged(object sender, EventArgs e)
         {
             if (engFlag_CBox.Checked) { engFlag_CBox.Checked = false; }
             if (hunFlag_CBox.Checked) { hunFlag_CBox.Checked = false; }
+            languageChoice = LangChooser.German;
         }
 
         private void engFlag_CBox_CheckedChanged(object sender, EventArgs e)
         {
             if (hunFlag_CBox.Checked) { hunFlag_CBox.Checked = false; }
             if (gerFlag_CBox.Checked) { gerFlag_CBox.Checked = false; }
+            languageChoice = LangChooser.English;
         }
 
         private void stand_Unit_CBox_CheckedChanged(object sender, EventArgs e)
