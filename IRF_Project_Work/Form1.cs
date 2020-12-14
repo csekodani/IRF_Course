@@ -1,4 +1,5 @@
-﻿using IRF_Project_Work.RestAPI;
+﻿using IRF_Project_Work.Entities;
+using IRF_Project_Work.RestAPI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace IRF_Project_Work
     {
         LangChooser languageChoice = LangChooser.Hungarian;
         UnitChooser unitChoice = UnitChooser.Standard;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +31,7 @@ namespace IRF_Project_Work
 
         private void btn_GO_Click(object sender, EventArgs e)
         {
-            Result_Form f1 = new Result_Form();
+            Result_Form f1 = new Result_Form();        
             f1.Show();
           
         }

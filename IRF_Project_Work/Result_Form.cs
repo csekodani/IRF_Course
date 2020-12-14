@@ -1,5 +1,6 @@
 ﻿using IRF_Project_Work.Entities;
 using IRF_Project_Work.MnbServiceReference;
+using IRF_Project_Work.RestAPI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,8 +19,8 @@ namespace IRF_Project_Work
     {
         BindingList<RateData> Rates = new BindingList<RateData>();
         BindingList<NameDay> NameDays = new BindingList<NameDay>();
-
-
+        Weather resultWeater = new Weather(); //instance that we will display and get data in
+        
 
         public Result_Form()
         {
@@ -28,8 +29,24 @@ namespace IRF_Project_Work
             FillNameDayList();
             GetCurrentExchangeRates();
             DisplayNameDay();
-            mngRateDataGridView.DataSource = Rates;
+            LoadWeatherData();
+            DisplayWeather();
+            mnbRateDataGridView.DataSource = Rates;
             
+        }
+        public void LoadWeatherData()
+        {
+            //run request, and get the response to resultWeather properties
+
+             var GotResponse = WeatherProcessor.LoadWeather("Budapest",LangChooser.Hungarian,UnitChooser.Standard);
+
+        }
+
+        public void DisplayWeather()
+        {
+            //set all labels accourding to the data of the instance
+            // e.g.  label98.Text= resultWeather.Preassure
+
         }
         public void DisplayNameDay()        //displays name on the label of the form
         {

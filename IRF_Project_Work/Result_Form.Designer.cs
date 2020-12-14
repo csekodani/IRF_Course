@@ -49,13 +49,13 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.mngRateDataGridView = new System.Windows.Forms.DataGridView();
+            this.mnbRateDataGridView = new System.Windows.Forms.DataGridView();
             this.fxSearchTB = new System.Windows.Forms.TextBox();
             this.fxSearchLabel = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.NevLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.mngRateDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnbRateDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -270,17 +270,17 @@
             this.label21.TabIndex = 20;
             this.label21.Text = "Mai Forint Árfolyamok";
             // 
-            // mngRateDataGridView
+            // mnbRateDataGridView
             // 
-            this.mngRateDataGridView.AllowUserToAddRows = false;
-            this.mngRateDataGridView.AllowUserToDeleteRows = false;
-            this.mngRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.mngRateDataGridView.Location = new System.Drawing.Point(689, 218);
-            this.mngRateDataGridView.Name = "mngRateDataGridView";
-            this.mngRateDataGridView.ReadOnly = true;
-            this.mngRateDataGridView.RowHeadersVisible = false;
-            this.mngRateDataGridView.Size = new System.Drawing.Size(215, 425);
-            this.mngRateDataGridView.TabIndex = 21;
+            this.mnbRateDataGridView.AllowUserToAddRows = false;
+            this.mnbRateDataGridView.AllowUserToDeleteRows = false;
+            this.mnbRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mnbRateDataGridView.Location = new System.Drawing.Point(689, 218);
+            this.mnbRateDataGridView.Name = "mnbRateDataGridView";
+            this.mnbRateDataGridView.ReadOnly = true;
+            this.mnbRateDataGridView.RowHeadersVisible = false;
+            this.mnbRateDataGridView.Size = new System.Drawing.Size(215, 425);
+            this.mnbRateDataGridView.TabIndex = 21;
             // 
             // fxSearchTB
             // 
@@ -345,7 +345,7 @@
             this.Controls.Add(this.label22);
             this.Controls.Add(this.fxSearchLabel);
             this.Controls.Add(this.fxSearchTB);
-            this.Controls.Add(this.mngRateDataGridView);
+            this.Controls.Add(this.mnbRateDataGridView);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
@@ -370,7 +370,7 @@
             this.Name = "Result_Form";
             this.Text = "Service Result";
             this.Load += new System.EventHandler(this.Result_Form_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.mngRateDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnbRateDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,7 +399,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DataGridView mngRateDataGridView;
+        private System.Windows.Forms.DataGridView mnbRateDataGridView;
         private System.Windows.Forms.TextBox fxSearchTB;
         private System.Windows.Forms.Label fxSearchLabel;
         private System.Windows.Forms.Label label22;
