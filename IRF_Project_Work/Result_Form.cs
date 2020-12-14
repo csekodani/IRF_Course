@@ -28,12 +28,25 @@ namespace IRF_Project_Work
             FillNameDayList();
             GetCurrentExchangeRates();
             mngRateDataGridView.DataSource = Rates;
+            
         }
-        
+
         public void FillNameDayList()
         {
-            XElement nevnapXML = XElement.Load(@"nevnapok.xml");
-
+            var xml = new XmlDocument();
+            xml.Load(@"nevnapok.xml");                              // one nevnap is an item and has 3 nodes
+            foreach (XmlElement item in xml.DocumentElement)        // honap- nap- nev with inner text as their value
+            {
+                var nd = new NameDay();
+                    var honapChild = (XmlElement)item.ChildNodes[0];
+                    nd.Honap = int.Parse(honapChild.InnerText);
+                    var napChild = (XmlElement)item.ChildNodes[1];
+                    nd.Nap = int.Parse(napChild.InnerText);
+                    var nevChild = (XmlElement)item.ChildNodes[2];
+                    nd.Nev = nevChild.InnerText;
+    
+                NameDays.Add(nd);
+            }
         }
         public void GetCurrentExchangeRates()
         {
@@ -44,9 +57,6 @@ namespace IRF_Project_Work
 
             var xml = new XmlDocument();
             xml.LoadXml(result);
-
-
-
 
             foreach (XmlElement element in xml.DocumentElement)
             {
