@@ -12,7 +12,7 @@ namespace IRF_Project_Work.Entities
         public string Name { get; set; }
         public decimal Longitude { get; set; }
         public decimal Latitude { get; set; }
-        public string Country { get; set; }
+        public string CountrySign { get; set; }
         public DateTime SunRise { get; set; }
         public DateTime SunSet { get; set; }
         public decimal  Temperature { get; set; }
