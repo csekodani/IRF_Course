@@ -14,6 +14,7 @@ namespace IRF_Project_Work
     public partial class Form1 : Form
     {
         LangChooser languageChoice = LangChooser.Hungarian;
+        UnitChooser unitChoice = UnitChooser.Standard;
         public Form1()
         {
             InitializeComponent();
@@ -86,18 +87,21 @@ namespace IRF_Project_Work
         {
             if (imp_Unit_CBox.Checked) imp_Unit_CBox.Checked = false;
             if (metric_Unit_CBox.Checked) metric_Unit_CBox.Checked = false;
+            unitChoice = UnitChooser.Standard;
         }
 
         private void imp_Unit_CBox_CheckedChanged(object sender, EventArgs e)
         {
             if (stand_Unit_CBox.Checked) stand_Unit_CBox.Checked = false;
             if (metric_Unit_CBox.Checked) metric_Unit_CBox.Checked = false;
+            unitChoice = UnitChooser.Imperial;
         }
 
         private void metric_Unit_CBox_CheckedChanged(object sender, EventArgs e)
         {
             if (imp_Unit_CBox.Checked) imp_Unit_CBox.Checked = false;
             if (stand_Unit_CBox.Checked) stand_Unit_CBox.Checked = false;
+            unitChoice = UnitChooser.Metric;
         }
     }
 }
