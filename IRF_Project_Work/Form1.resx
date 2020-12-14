@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gerFlag_CBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFAAAAAwCAYAAACG5f33AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
+        TUUH4QgKCRgvaBpXrQAAAJRJREFUaEPt0LENw0AMBMHvvzh34FpeKoABoU2HwDC4cM97l2Qc2RtH9saR
+        vXFkbxzZG0f2xpG9cWRvHNkbR/bGkb1xZG8c2RtH9saRrf/7+E7ASMBIwEjASMBIwEjASMBIwEjASMBI
+        wEjASMBIwOjc37l8J2AkYCRgJGAkYCRgJGAkYCRgJGAkYCRgJGAkYCRgcu4DQYNEpbq0PZgAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
 </root>
