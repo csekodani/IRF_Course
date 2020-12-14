@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -67,6 +68,15 @@ namespace IRF_Project_Work.RestAPI
                 units = "standard";
             }
             string url = $"http://api.openweathermap.org/data/2.5/weather?lat={ latit }&lon={longit}&lang={ langMode }&units={ unit }&appid={ apiKey }";
+            using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
+            {
+                // there is a neet to make functions return to xml to be able to pass results to form 2
+                //need to get response oout of using, because it will terminate everything in it when it is done
+                if (response.IsSuccessStatusCode)
+                {
+
+                }
+            }
         }
         public async Task LoadWeather(string City, LangChooser lang, UnitChooser unit)
         {   //unit choice

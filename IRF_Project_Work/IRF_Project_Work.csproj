@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Weather.cs" />
     <Compile Include="RestAPI\Api_Helper.cs" />
     <Compile Include="Connected Services\MnbServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -70,8 +71,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RestAPI\LangChooser.cs" />
-    <Compile Include="RestAPI\UnitChooser.cs" />
+    <Compile Include="Entities\LangChooser.cs" />
+    <Compile Include="Entities\UnitChooser.cs" />
     <Compile Include="RestAPI\WeatherProcessor.cs" />
     <Compile Include="Result_Form.cs">
       <SubType>Form</SubType>
