@@ -264,7 +264,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label21.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label21.Location = new System.Drawing.Point(517, 261);
+            this.label21.Location = new System.Drawing.Point(517, 163);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(298, 31);
             this.label21.TabIndex = 20;
@@ -275,17 +275,17 @@
             this.mngRateDataGridView.AllowUserToAddRows = false;
             this.mngRateDataGridView.AllowUserToDeleteRows = false;
             this.mngRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.mngRateDataGridView.Location = new System.Drawing.Point(689, 340);
+            this.mngRateDataGridView.Location = new System.Drawing.Point(689, 218);
             this.mngRateDataGridView.Name = "mngRateDataGridView";
             this.mngRateDataGridView.ReadOnly = true;
             this.mngRateDataGridView.RowHeadersVisible = false;
-            this.mngRateDataGridView.Size = new System.Drawing.Size(215, 303);
+            this.mngRateDataGridView.Size = new System.Drawing.Size(215, 425);
             this.mngRateDataGridView.TabIndex = 21;
             // 
             // fxSearchTB
             // 
             this.fxSearchTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.fxSearchTB.Location = new System.Drawing.Point(539, 378);
+            this.fxSearchTB.Location = new System.Drawing.Point(539, 286);
             this.fxSearchTB.Name = "fxSearchTB";
             this.fxSearchTB.Size = new System.Drawing.Size(100, 22);
             this.fxSearchTB.TabIndex = 22;
@@ -295,7 +295,7 @@
             // 
             this.fxSearchLabel.AutoSize = true;
             this.fxSearchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.fxSearchLabel.Location = new System.Drawing.Point(535, 418);
+            this.fxSearchLabel.Location = new System.Drawing.Point(535, 326);
             this.fxSearchLabel.Name = "fxSearchLabel";
             this.fxSearchLabel.Size = new System.Drawing.Size(67, 20);
             this.fxSearchLabel.TabIndex = 23;
@@ -306,7 +306,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label22.Location = new System.Drawing.Point(627, 418);
+            this.label22.Location = new System.Drawing.Point(627, 326);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(56, 20);
             this.label22.TabIndex = 24;
@@ -317,7 +317,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(519, 340);
+            this.label23.Location = new System.Drawing.Point(519, 248);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(120, 20);
             this.label23.TabIndex = 25;

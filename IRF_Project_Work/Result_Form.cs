@@ -27,10 +27,21 @@ namespace IRF_Project_Work
             InitializeComponent();
             FillNameDayList();
             GetCurrentExchangeRates();
+            DisplayNameDay();
             mngRateDataGridView.DataSource = Rates;
             
         }
-
+        public void DisplayNameDay()        //displays name on the label of the form
+        {
+            foreach (NameDay item in NameDays)
+            {
+                if ((item.Honap==DateTime.Today.Month) && (item.Nap==DateTime.Today.Day))
+                {
+                    NevLabel.Visible = true;
+                    NevLabel.Text = item.Nev;
+                }
+            }
+        }
         public void FillNameDayList()
         {
             var xml = new XmlDocument();
