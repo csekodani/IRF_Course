@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace IRF_Project_Work.RestAPI
 {
@@ -12,7 +13,7 @@ namespace IRF_Project_Work.RestAPI
         string apiKey = "1e98a6276b52c465746e1853aef68c90"; // my personal apiKey free and has a limit per day
         string langMode;
         string units;
-        public async Task LoadWeather(int id, LangChooser lang, UnitChooser unit)
+        public async Task<XmlDocument> LoadWeather(int id, LangChooser lang, UnitChooser unit,XmlDocument myRestXML)
         {
             // language choice will set the language parameter
             if (lang == LangChooser.Hungarian)
@@ -39,8 +40,22 @@ namespace IRF_Project_Work.RestAPI
                 units = "standard";
             }
             string url = $"http://api.openweathermap.org/data/2.5/weather?id={ id }&lang={ langMode }&units={ unit }&appid={ apiKey }";
-        }
-        public async Task LoadWeather(decimal latit, decimal longit, LangChooser lang, UnitChooser unit)
+            using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
+                {
+                // there is a neet to make functions return to xml to be able to pass results to form 2
+                //need to get response oout of using, because it will terminate everything in it when it is done
+                if (response.IsSuccessStatusCode)
+                    {
+                    myRestXML = await response.Content.ReadAsAsync<XmlDocument>();
+                    return myRestXML;
+                    }
+                    else
+                    {
+                    throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+        public async Task<XmlDocument> LoadWeather(decimal latit, decimal longit, LangChooser lang, UnitChooser unit, XmlDocument myRestXML)
         {   //language choice
             if (lang == LangChooser.Hungarian)
             {
@@ -74,11 +89,16 @@ namespace IRF_Project_Work.RestAPI
                 //need to get response oout of using, because it will terminate everything in it when it is done
                 if (response.IsSuccessStatusCode)
                 {
-
+                    myRestXML = await response.Content.ReadAsAsync<XmlDocument>();
+                    return myRestXML;
+                }
+                else
+                {
+                    throw new Exception(response.ReasonPhrase);
                 }
             }
         }
-        public async Task LoadWeather(string City, LangChooser lang, UnitChooser unit)
+        public async Task<XmlDocument> LoadWeather(string City, LangChooser lang, UnitChooser unit, XmlDocument myRestXML)
         {   //unit choice
             if (unit == UnitChooser.Imperial)
             {
@@ -106,6 +126,20 @@ namespace IRF_Project_Work.RestAPI
                 langMode = "en";
             }
             string url = $"http://api.openweathermap.org/data/2.5/weather?q={ City }&units={ unit }&lang={ langMode }&appid={ apiKey }";
+            using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
+            {
+                // there is a neet to make functions return to xml to be able to pass results to form 2
+                //need to get response oout of using, because it will terminate everything in it when it is done
+                if (response.IsSuccessStatusCode)
+                {
+                    myRestXML = await response.Content.ReadAsAsync<XmlDocument>();
+                    return myRestXML;
+                }
+                else
+                {
+                    throw new Exception(response.ReasonPhrase);
+                }
+            }
         }
     }
 }
