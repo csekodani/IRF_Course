@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace IRF_Project_Work.Entities
 {
-    public class RateData
+    public interface IExchangeManager
     {
-        
-        public string Currency { get; set; }
-        public decimal Value { get; set; }
+         BindingList<RateData> Exchanges { get; }
+        RateData CreateExchange(RateData exchange);
     }
 }

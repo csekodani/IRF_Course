@@ -75,7 +75,9 @@
             this.lbwHumidUnit = new System.Windows.Forms.Label();
             this.lbwPressureUnit = new System.Windows.Forms.Label();
             this.lbwWindspeedUnit = new System.Windows.Forms.Label();
+            this.dgwSaveExchange = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.mnbRateDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwSaveExchange)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -574,11 +576,20 @@
             this.lbwWindspeedUnit.Text = "UnitLabel";
             this.lbwWindspeedUnit.Visible = false;
             // 
+            // dgwSaveExchange
+            // 
+            this.dgwSaveExchange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwSaveExchange.Location = new System.Drawing.Point(460, 413);
+            this.dgwSaveExchange.Name = "dgwSaveExchange";
+            this.dgwSaveExchange.Size = new System.Drawing.Size(223, 150);
+            this.dgwSaveExchange.TabIndex = 47;
+            // 
             // Result_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 657);
+            this.Controls.Add(this.dgwSaveExchange);
             this.Controls.Add(this.lbwWindspeedUnit);
             this.Controls.Add(this.lbwPressureUnit);
             this.Controls.Add(this.lbwHumidUnit);
@@ -630,6 +641,7 @@
             this.Text = "Service Result";
             this.Load += new System.EventHandler(this.Result_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mnbRateDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwSaveExchange)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -684,5 +696,6 @@
         private System.Windows.Forms.Label lbwHumidUnit;
         private System.Windows.Forms.Label lbwPressureUnit;
         private System.Windows.Forms.Label lbwWindspeedUnit;
+        private System.Windows.Forms.DataGridView dgwSaveExchange;
     }
 }

@@ -20,20 +20,9 @@ namespace IRF_Project_Work
         BindingList<RateData> Rates = new BindingList<RateData>();
         BindingList<NameDay> NameDays = new BindingList<NameDay>();
         Weather resultWeater = new Weather(); //instance that we will display and get data in
+        private ExchangeController _controller = new ExchangeController();
 
-
-        //public Result_Form()
-        //{
-            
-        //    InitializeComponent();
-        //    FillNameDayList();
-        //    GetCurrentExchangeRates();
-        //    DisplayNameDay();
-        //    LoadWeatherData();
-        //    DisplayWeather();
-        //    mnbRateDataGridView.DataSource = Rates;
-            
-        //}
+       
         public Result_Form(string id,decimal lon ,decimal lat,string city, int searchType, LangChooser lc, UnitChooser uc)
         {
             InitializeComponent();
@@ -43,6 +32,7 @@ namespace IRF_Project_Work
             LoadWeatherData(id,lon,lat,city,searchType,lc,uc);
             //DisplayWeather();
             mnbRateDataGridView.DataSource = Rates;
+            dgwSaveExchange.DataSource = _controller.ExchangeManager.Exchanges;
 
         }
         public async void LoadWeatherData(string id, decimal lon, decimal lat, string city, int searchType,LangChooser lc,UnitChooser uc)

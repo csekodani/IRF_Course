@@ -54,7 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\IExchangeManager.cs" />
     <Compile Include="Entities\Weather.cs" />
+    <Compile Include="Entities\ExchangeController.cs" />
+    <Compile Include="Entities\ExchangeManger.cs" />
     <Compile Include="RestAPI\Api_Helper.cs" />
     <Compile Include="Connected Services\MnbServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
