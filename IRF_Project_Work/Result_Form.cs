@@ -41,17 +41,18 @@ namespace IRF_Project_Work
             GetCurrentExchangeRates();
             DisplayNameDay();
             LoadWeatherData(id,lon,lat,city,searchType,lc,uc);
-            DisplayWeather();
+            //DisplayWeather();
             mnbRateDataGridView.DataSource = Rates;
 
         }
         public async void LoadWeatherData(string id, decimal lon, decimal lat, string city, int searchType,LangChooser lc,UnitChooser uc)
         {
             XmlDocument GotResponse = new XmlDocument();
-            if (searchType==1) GotResponse = await WeatherProcessor.LoadWeather(id, lc, uc);
-            else if (searchType==2) GotResponse = await WeatherProcessor.LoadWeather(lat, lon, lc, uc);
-            else if (searchType==3) GotResponse = await WeatherProcessor.LoadWeather(city, lc, uc);
- 
+
+            if (searchType == 1) GotResponse = await WeatherProcessor.LoadWeather(id, lc, uc);
+            if (searchType == 2) GotResponse = await WeatherProcessor.LoadWeather(lat, lon, lc, uc);
+            if (searchType == 3) GotResponse = await WeatherProcessor.LoadWeather(city, lc, uc);
+
             foreach (XmlElement element in GotResponse.LastChild)
             {   //LastChild is current the other oe is the format header
                 //on this level we have 11 nodes
@@ -120,8 +121,8 @@ namespace IRF_Project_Work
                     resultWeater.LastUpdate = DateTime.Parse(element.GetAttribute("value"));
                 }
             }
-            
-            
+
+            DisplayWeather();
          }
 
         public void DisplayWeather()    //label setting- hardcoding
