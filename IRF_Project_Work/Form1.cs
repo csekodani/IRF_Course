@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Drawing.Drawing2D;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,17 +18,48 @@ namespace IRF_Project_Work
     {
         LangChooser languageChoice = LangChooser.Hungarian;
         UnitChooser unitChoice = UnitChooser.Standard;
-        
 
         
+
+
 
 
         public Form1()
         {
             InitializeComponent();
             Api_Helper.InitializeClient();
+            //BackGround paint
+            this.Paint += Form1_Paint;
+
         }
 
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+
+            //the rectangle, the same size as our Form
+            Rectangle gradient_rectangle = new Rectangle(0, 0, Width, Height);
+
+            //define gradient's properties
+            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(57, 128, 227), Color.FromArgb(0,0,0), 65f);
+
+            //apply gradient         
+            graphics.FillRectangle(b, gradient_rectangle);
+        }
+
+        private void set_background(Object sender, PaintEventArgs e)
+        {
+
+            Graphics graphics = e.Graphics;
+            //the rectangle, the same size as Form
+            Rectangle gradient_rectangle = new Rectangle(0, 0, Width, Height);
+
+            //define gradient's properties
+            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(0, 0, 0), Color.FromArgb(57, 128, 227), 65f);
+
+            //apply gradient         
+            graphics.FillRectangle(b, gradient_rectangle);
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 

@@ -262,7 +262,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label19.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label19.Location = new System.Drawing.Point(44, 21);
+            this.label19.Location = new System.Drawing.Point(88, 21);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(215, 31);
             this.label19.TabIndex = 18;
@@ -299,7 +299,7 @@
             this.mnbRateDataGridView.Name = "mnbRateDataGridView";
             this.mnbRateDataGridView.ReadOnly = true;
             this.mnbRateDataGridView.RowHeadersVisible = false;
-            this.mnbRateDataGridView.Size = new System.Drawing.Size(215, 425);
+            this.mnbRateDataGridView.Size = new System.Drawing.Size(223, 425);
             this.mnbRateDataGridView.TabIndex = 21;
             // 
             // fxSearchTB
@@ -524,7 +524,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label24.Location = new System.Drawing.Point(382, 580);
+            this.label24.Location = new System.Drawing.Point(312, 578);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(27, 24);
             this.label24.TabIndex = 42;
@@ -534,7 +534,7 @@
             // 
             this.lbwTempUnit.AutoSize = true;
             this.lbwTempUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbwTempUnit.Location = new System.Drawing.Point(366, 342);
+            this.lbwTempUnit.Location = new System.Drawing.Point(312, 342);
             this.lbwTempUnit.Name = "lbwTempUnit";
             this.lbwTempUnit.Size = new System.Drawing.Size(97, 24);
             this.lbwTempUnit.TabIndex = 43;
@@ -545,7 +545,7 @@
             // 
             this.lbwHumidUnit.AutoSize = true;
             this.lbwHumidUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbwHumidUnit.Location = new System.Drawing.Point(366, 377);
+            this.lbwHumidUnit.Location = new System.Drawing.Point(312, 376);
             this.lbwHumidUnit.Name = "lbwHumidUnit";
             this.lbwHumidUnit.Size = new System.Drawing.Size(97, 24);
             this.lbwHumidUnit.TabIndex = 44;
@@ -556,7 +556,7 @@
             // 
             this.lbwPressureUnit.AutoSize = true;
             this.lbwPressureUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbwPressureUnit.Location = new System.Drawing.Point(366, 416);
+            this.lbwPressureUnit.Location = new System.Drawing.Point(312, 416);
             this.lbwPressureUnit.Name = "lbwPressureUnit";
             this.lbwPressureUnit.Size = new System.Drawing.Size(97, 24);
             this.lbwPressureUnit.TabIndex = 45;
@@ -567,7 +567,7 @@
             // 
             this.lbwWindspeedUnit.AutoSize = true;
             this.lbwWindspeedUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbwWindspeedUnit.Location = new System.Drawing.Point(367, 487);
+            this.lbwWindspeedUnit.Location = new System.Drawing.Point(285, 489);
             this.lbwWindspeedUnit.Name = "lbwWindspeedUnit";
             this.lbwWindspeedUnit.Size = new System.Drawing.Size(74, 16);
             this.lbwWindspeedUnit.TabIndex = 46;

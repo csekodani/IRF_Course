@@ -51,10 +51,11 @@
             // MainLabel
             // 
             this.MainLabel.AutoSize = true;
-            this.MainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.MainLabel.Location = new System.Drawing.Point(36, 28);
+            this.MainLabel.BackColor = System.Drawing.Color.Transparent;
+            this.MainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.MainLabel.Location = new System.Drawing.Point(57, 25);
             this.MainLabel.Name = "MainLabel";
-            this.MainLabel.Size = new System.Drawing.Size(198, 25);
+            this.MainLabel.Size = new System.Drawing.Size(219, 25);
             this.MainLabel.TabIndex = 0;
             this.MainLabel.Text = "Keresett város adata:";
             this.MainLabel.UseMnemonic = false;
@@ -62,41 +63,45 @@
             // radioBtn_ID
             // 
             this.radioBtn_ID.AutoSize = true;
+            this.radioBtn_ID.BackColor = System.Drawing.Color.Transparent;
             this.radioBtn_ID.Location = new System.Drawing.Point(41, 80);
             this.radioBtn_ID.Name = "radioBtn_ID";
             this.radioBtn_ID.Size = new System.Drawing.Size(36, 17);
             this.radioBtn_ID.TabIndex = 1;
             this.radioBtn_ID.TabStop = true;
             this.radioBtn_ID.Text = "ID";
-            this.radioBtn_ID.UseVisualStyleBackColor = true;
+            this.radioBtn_ID.UseVisualStyleBackColor = false;
             this.radioBtn_ID.CheckedChanged += new System.EventHandler(this.radioBtn_ID_CheckedChanged);
             // 
             // radioBtn_Coord
             // 
             this.radioBtn_Coord.AutoSize = true;
+            this.radioBtn_Coord.BackColor = System.Drawing.Color.Transparent;
             this.radioBtn_Coord.Location = new System.Drawing.Point(41, 113);
             this.radioBtn_Coord.Name = "radioBtn_Coord";
             this.radioBtn_Coord.Size = new System.Drawing.Size(79, 17);
             this.radioBtn_Coord.TabIndex = 2;
             this.radioBtn_Coord.TabStop = true;
             this.radioBtn_Coord.Text = "Koordináta:";
-            this.radioBtn_Coord.UseVisualStyleBackColor = true;
+            this.radioBtn_Coord.UseVisualStyleBackColor = false;
             this.radioBtn_Coord.CheckedChanged += new System.EventHandler(this.radioBtn_Coord_CheckedChanged);
             // 
             // radioBtn_Name
             // 
             this.radioBtn_Name.AutoSize = true;
+            this.radioBtn_Name.BackColor = System.Drawing.Color.Transparent;
             this.radioBtn_Name.Location = new System.Drawing.Point(41, 147);
             this.radioBtn_Name.Name = "radioBtn_Name";
             this.radioBtn_Name.Size = new System.Drawing.Size(45, 17);
             this.radioBtn_Name.TabIndex = 3;
             this.radioBtn_Name.TabStop = true;
             this.radioBtn_Name.Text = "Név";
-            this.radioBtn_Name.UseVisualStyleBackColor = true;
+            this.radioBtn_Name.UseVisualStyleBackColor = false;
             this.radioBtn_Name.CheckedChanged += new System.EventHandler(this.radioBtn_Name_CheckedChanged);
             // 
             // textBox_ID
             // 
+            this.textBox_ID.BackColor = System.Drawing.Color.LightBlue;
             this.textBox_ID.Location = new System.Drawing.Point(134, 80);
             this.textBox_ID.Name = "textBox_ID";
             this.textBox_ID.Size = new System.Drawing.Size(100, 20);
@@ -104,6 +109,7 @@
             // 
             // textBox_Coord_Long
             // 
+            this.textBox_Coord_Long.BackColor = System.Drawing.Color.LightBlue;
             this.textBox_Coord_Long.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Coord_Long.Location = new System.Drawing.Point(134, 113);
             this.textBox_Coord_Long.Name = "textBox_Coord_Long";
@@ -113,6 +119,7 @@
             // 
             // textBox_Name
             // 
+            this.textBox_Name.BackColor = System.Drawing.Color.LightBlue;
             this.textBox_Name.Location = new System.Drawing.Point(134, 147);
             this.textBox_Name.Name = "textBox_Name";
             this.textBox_Name.Size = new System.Drawing.Size(100, 20);
@@ -120,22 +127,24 @@
             // 
             // btn_GO
             // 
+            this.btn_GO.BackColor = System.Drawing.Color.Transparent;
             this.btn_GO.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_GO.Location = new System.Drawing.Point(450, 258);
+            this.btn_GO.Location = new System.Drawing.Point(438, 243);
             this.btn_GO.Name = "btn_GO";
             this.btn_GO.Size = new System.Drawing.Size(106, 50);
             this.btn_GO.TabIndex = 7;
             this.btn_GO.Text = "Go";
-            this.btn_GO.UseVisualStyleBackColor = true;
+            this.btn_GO.UseVisualStyleBackColor = false;
             this.btn_GO.Click += new System.EventHandler(this.btn_GO_Click);
             // 
             // languageLabel
             // 
             this.languageLabel.AutoSize = true;
-            this.languageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.languageLabel.Location = new System.Drawing.Point(417, 40);
+            this.languageLabel.BackColor = System.Drawing.Color.Transparent;
+            this.languageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.languageLabel.Location = new System.Drawing.Point(414, 25);
             this.languageLabel.Name = "languageLabel";
-            this.languageLabel.Size = new System.Drawing.Size(182, 25);
+            this.languageLabel.Size = new System.Drawing.Size(200, 25);
             this.languageLabel.TabIndex = 8;
             this.languageLabel.Text = "Lekérdezés nyelve:";
             this.languageLabel.UseMnemonic = false;
@@ -190,10 +199,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(57, 223);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(74, 226);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 25);
+            this.label1.Size = new System.Drawing.Size(160, 25);
             this.label1.TabIndex = 12;
             this.label1.Text = "Mérési egység:";
             this.label1.UseMnemonic = false;
@@ -238,6 +248,7 @@
             // 
             // textBox_Coord_Lat
             // 
+            this.textBox_Coord_Lat.BackColor = System.Drawing.Color.LightBlue;
             this.textBox_Coord_Lat.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Coord_Lat.Location = new System.Drawing.Point(234, 112);
             this.textBox_Coord_Lat.Name = "textBox_Coord_Lat";

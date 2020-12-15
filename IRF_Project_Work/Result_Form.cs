@@ -142,10 +142,10 @@ namespace IRF_Project_Work
             lbwCountry.Text = resultWeater.CountrySign;
             lbwCountry.Visible = true;
 
-            lbwSunRise.Text = resultWeater.SunRise.ToString();
+            lbwSunRise.Text = resultWeater.SunRise.Hour.ToString()+" : "+ resultWeater.SunRise.Minute.ToString();
             lbwSunRise.Visible = true;
 
-            lbwSunSet.Text = resultWeater.SunSet.ToString();
+            lbwSunSet.Text = resultWeater.SunSet.Hour.ToString() + " : " + resultWeater.SunSet.Minute.ToString();
             lbwSunSet.Visible = true;
 
             lbwTemperature.Text = resultWeater.Temperature.ToString();
