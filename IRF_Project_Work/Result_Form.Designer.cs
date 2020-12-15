@@ -55,6 +55,26 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.NevLabel = new System.Windows.Forms.Label();
+            this.lbwID = new System.Windows.Forms.Label();
+            this.lbwName = new System.Windows.Forms.Label();
+            this.lbwCountry = new System.Windows.Forms.Label();
+            this.lbwSunRise = new System.Windows.Forms.Label();
+            this.lbwSunSet = new System.Windows.Forms.Label();
+            this.lbwTemperature = new System.Windows.Forms.Label();
+            this.lbwHumidity = new System.Windows.Forms.Label();
+            this.lbwPressure = new System.Windows.Forms.Label();
+            this.lbwCloud = new System.Windows.Forms.Label();
+            this.lbwVisibility = new System.Windows.Forms.Label();
+            this.lbwLastUpdated = new System.Windows.Forms.Label();
+            this.lbwLongitude = new System.Windows.Forms.Label();
+            this.lbwLatitude = new System.Windows.Forms.Label();
+            this.lbwWindSpeed = new System.Windows.Forms.Label();
+            this.lbwWindDirection = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.lbwTempUnit = new System.Windows.Forms.Label();
+            this.lbwHumidUnit = new System.Windows.Forms.Label();
+            this.lbwPressureUnit = new System.Windows.Forms.Label();
+            this.lbwWindspeedUnit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.mnbRateDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,7 +122,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(114, 194);
+            this.label5.Location = new System.Drawing.Point(114, 195);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 17);
             this.label5.TabIndex = 4;
@@ -335,11 +355,250 @@
             this.NevLabel.Text = "Nev";
             this.NevLabel.Visible = false;
             // 
+            // lbwID
+            // 
+            this.lbwID.AutoSize = true;
+            this.lbwID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwID.Location = new System.Drawing.Point(239, 79);
+            this.lbwID.Name = "lbwID";
+            this.lbwID.Size = new System.Drawing.Size(109, 20);
+            this.lbwID.TabIndex = 27;
+            this.lbwID.Text = "WeatherLabel";
+            this.lbwID.Visible = false;
+            // 
+            // lbwName
+            // 
+            this.lbwName.AutoSize = true;
+            this.lbwName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwName.Location = new System.Drawing.Point(239, 118);
+            this.lbwName.Name = "lbwName";
+            this.lbwName.Size = new System.Drawing.Size(109, 20);
+            this.lbwName.TabIndex = 28;
+            this.lbwName.Text = "WeatherLabel";
+            this.lbwName.Visible = false;
+            // 
+            // lbwCountry
+            // 
+            this.lbwCountry.AutoSize = true;
+            this.lbwCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwCountry.Location = new System.Drawing.Point(239, 227);
+            this.lbwCountry.Name = "lbwCountry";
+            this.lbwCountry.Size = new System.Drawing.Size(109, 20);
+            this.lbwCountry.TabIndex = 29;
+            this.lbwCountry.Text = "WeatherLabel";
+            this.lbwCountry.Visible = false;
+            // 
+            // lbwSunRise
+            // 
+            this.lbwSunRise.AutoSize = true;
+            this.lbwSunRise.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwSunRise.Location = new System.Drawing.Point(239, 261);
+            this.lbwSunRise.Name = "lbwSunRise";
+            this.lbwSunRise.Size = new System.Drawing.Size(109, 20);
+            this.lbwSunRise.TabIndex = 30;
+            this.lbwSunRise.Text = "WeatherLabel";
+            this.lbwSunRise.Visible = false;
+            // 
+            // lbwSunSet
+            // 
+            this.lbwSunSet.AutoSize = true;
+            this.lbwSunSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwSunSet.Location = new System.Drawing.Point(239, 301);
+            this.lbwSunSet.Name = "lbwSunSet";
+            this.lbwSunSet.Size = new System.Drawing.Size(109, 20);
+            this.lbwSunSet.TabIndex = 31;
+            this.lbwSunSet.Text = "WeatherLabel";
+            this.lbwSunSet.Visible = false;
+            // 
+            // lbwTemperature
+            // 
+            this.lbwTemperature.AutoSize = true;
+            this.lbwTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwTemperature.Location = new System.Drawing.Point(239, 342);
+            this.lbwTemperature.Name = "lbwTemperature";
+            this.lbwTemperature.Size = new System.Drawing.Size(109, 20);
+            this.lbwTemperature.TabIndex = 32;
+            this.lbwTemperature.Text = "WeatherLabel";
+            this.lbwTemperature.Visible = false;
+            // 
+            // lbwHumidity
+            // 
+            this.lbwHumidity.AutoSize = true;
+            this.lbwHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwHumidity.Location = new System.Drawing.Point(239, 380);
+            this.lbwHumidity.Name = "lbwHumidity";
+            this.lbwHumidity.Size = new System.Drawing.Size(109, 20);
+            this.lbwHumidity.TabIndex = 33;
+            this.lbwHumidity.Text = "WeatherLabel";
+            this.lbwHumidity.Visible = false;
+            // 
+            // lbwPressure
+            // 
+            this.lbwPressure.AutoSize = true;
+            this.lbwPressure.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwPressure.Location = new System.Drawing.Point(239, 420);
+            this.lbwPressure.Name = "lbwPressure";
+            this.lbwPressure.Size = new System.Drawing.Size(109, 20);
+            this.lbwPressure.TabIndex = 34;
+            this.lbwPressure.Text = "WeatherLabel";
+            this.lbwPressure.Visible = false;
+            // 
+            // lbwCloud
+            // 
+            this.lbwCloud.AutoSize = true;
+            this.lbwCloud.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwCloud.Location = new System.Drawing.Point(239, 543);
+            this.lbwCloud.Name = "lbwCloud";
+            this.lbwCloud.Size = new System.Drawing.Size(109, 20);
+            this.lbwCloud.TabIndex = 35;
+            this.lbwCloud.Text = "WeatherLabel";
+            this.lbwCloud.Visible = false;
+            // 
+            // lbwVisibility
+            // 
+            this.lbwVisibility.AutoSize = true;
+            this.lbwVisibility.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwVisibility.Location = new System.Drawing.Point(239, 582);
+            this.lbwVisibility.Name = "lbwVisibility";
+            this.lbwVisibility.Size = new System.Drawing.Size(109, 20);
+            this.lbwVisibility.TabIndex = 36;
+            this.lbwVisibility.Text = "WeatherLabel";
+            this.lbwVisibility.Visible = false;
+            // 
+            // lbwLastUpdated
+            // 
+            this.lbwLastUpdated.AutoSize = true;
+            this.lbwLastUpdated.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwLastUpdated.Location = new System.Drawing.Point(239, 621);
+            this.lbwLastUpdated.Name = "lbwLastUpdated";
+            this.lbwLastUpdated.Size = new System.Drawing.Size(109, 20);
+            this.lbwLastUpdated.TabIndex = 37;
+            this.lbwLastUpdated.Text = "WeatherLabel";
+            this.lbwLastUpdated.Visible = false;
+            // 
+            // lbwLongitude
+            // 
+            this.lbwLongitude.AutoSize = true;
+            this.lbwLongitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwLongitude.Location = new System.Drawing.Point(240, 176);
+            this.lbwLongitude.Name = "lbwLongitude";
+            this.lbwLongitude.Size = new System.Drawing.Size(93, 16);
+            this.lbwLongitude.TabIndex = 38;
+            this.lbwLongitude.Text = "WeatherLabel";
+            this.lbwLongitude.Visible = false;
+            // 
+            // lbwLatitude
+            // 
+            this.lbwLatitude.AutoSize = true;
+            this.lbwLatitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwLatitude.Location = new System.Drawing.Point(240, 195);
+            this.lbwLatitude.Name = "lbwLatitude";
+            this.lbwLatitude.Size = new System.Drawing.Size(93, 16);
+            this.lbwLatitude.TabIndex = 39;
+            this.lbwLatitude.Text = "WeatherLabel";
+            this.lbwLatitude.Visible = false;
+            // 
+            // lbwWindSpeed
+            // 
+            this.lbwWindSpeed.AutoSize = true;
+            this.lbwWindSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwWindSpeed.Location = new System.Drawing.Point(240, 488);
+            this.lbwWindSpeed.Name = "lbwWindSpeed";
+            this.lbwWindSpeed.Size = new System.Drawing.Size(93, 16);
+            this.lbwWindSpeed.TabIndex = 40;
+            this.lbwWindSpeed.Text = "WeatherLabel";
+            this.lbwWindSpeed.Visible = false;
+            // 
+            // lbwWindDirection
+            // 
+            this.lbwWindDirection.AutoSize = true;
+            this.lbwWindDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwWindDirection.Location = new System.Drawing.Point(240, 505);
+            this.lbwWindDirection.Name = "lbwWindDirection";
+            this.lbwWindDirection.Size = new System.Drawing.Size(93, 16);
+            this.lbwWindDirection.TabIndex = 41;
+            this.lbwWindDirection.Text = "WeatherLabel";
+            this.lbwWindDirection.Visible = false;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label24.Location = new System.Drawing.Point(382, 580);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(27, 24);
+            this.label24.TabIndex = 42;
+            this.label24.Text = "m";
+            // 
+            // lbwTempUnit
+            // 
+            this.lbwTempUnit.AutoSize = true;
+            this.lbwTempUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwTempUnit.Location = new System.Drawing.Point(366, 342);
+            this.lbwTempUnit.Name = "lbwTempUnit";
+            this.lbwTempUnit.Size = new System.Drawing.Size(97, 24);
+            this.lbwTempUnit.TabIndex = 43;
+            this.lbwTempUnit.Text = "UnitLabel";
+            this.lbwTempUnit.Visible = false;
+            // 
+            // lbwHumidUnit
+            // 
+            this.lbwHumidUnit.AutoSize = true;
+            this.lbwHumidUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwHumidUnit.Location = new System.Drawing.Point(366, 377);
+            this.lbwHumidUnit.Name = "lbwHumidUnit";
+            this.lbwHumidUnit.Size = new System.Drawing.Size(97, 24);
+            this.lbwHumidUnit.TabIndex = 44;
+            this.lbwHumidUnit.Text = "UnitLabel";
+            this.lbwHumidUnit.Visible = false;
+            // 
+            // lbwPressureUnit
+            // 
+            this.lbwPressureUnit.AutoSize = true;
+            this.lbwPressureUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwPressureUnit.Location = new System.Drawing.Point(366, 416);
+            this.lbwPressureUnit.Name = "lbwPressureUnit";
+            this.lbwPressureUnit.Size = new System.Drawing.Size(97, 24);
+            this.lbwPressureUnit.TabIndex = 45;
+            this.lbwPressureUnit.Text = "UnitLabel";
+            this.lbwPressureUnit.Visible = false;
+            // 
+            // lbwWindspeedUnit
+            // 
+            this.lbwWindspeedUnit.AutoSize = true;
+            this.lbwWindspeedUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbwWindspeedUnit.Location = new System.Drawing.Point(367, 487);
+            this.lbwWindspeedUnit.Name = "lbwWindspeedUnit";
+            this.lbwWindspeedUnit.Size = new System.Drawing.Size(74, 16);
+            this.lbwWindspeedUnit.TabIndex = 46;
+            this.lbwWindspeedUnit.Text = "UnitLabel";
+            this.lbwWindspeedUnit.Visible = false;
+            // 
             // Result_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 657);
+            this.Controls.Add(this.lbwWindspeedUnit);
+            this.Controls.Add(this.lbwPressureUnit);
+            this.Controls.Add(this.lbwHumidUnit);
+            this.Controls.Add(this.lbwTempUnit);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.lbwWindDirection);
+            this.Controls.Add(this.lbwWindSpeed);
+            this.Controls.Add(this.lbwLatitude);
+            this.Controls.Add(this.lbwLongitude);
+            this.Controls.Add(this.lbwLastUpdated);
+            this.Controls.Add(this.lbwVisibility);
+            this.Controls.Add(this.lbwCloud);
+            this.Controls.Add(this.lbwPressure);
+            this.Controls.Add(this.lbwHumidity);
+            this.Controls.Add(this.lbwTemperature);
+            this.Controls.Add(this.lbwSunSet);
+            this.Controls.Add(this.lbwSunRise);
+            this.Controls.Add(this.lbwCountry);
+            this.Controls.Add(this.lbwName);
+            this.Controls.Add(this.lbwID);
             this.Controls.Add(this.NevLabel);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
@@ -405,5 +664,25 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label NevLabel;
+        private System.Windows.Forms.Label lbwID;
+        private System.Windows.Forms.Label lbwName;
+        private System.Windows.Forms.Label lbwCountry;
+        private System.Windows.Forms.Label lbwSunRise;
+        private System.Windows.Forms.Label lbwSunSet;
+        private System.Windows.Forms.Label lbwTemperature;
+        private System.Windows.Forms.Label lbwHumidity;
+        private System.Windows.Forms.Label lbwPressure;
+        private System.Windows.Forms.Label lbwCloud;
+        private System.Windows.Forms.Label lbwVisibility;
+        private System.Windows.Forms.Label lbwLastUpdated;
+        private System.Windows.Forms.Label lbwLongitude;
+        private System.Windows.Forms.Label lbwLatitude;
+        private System.Windows.Forms.Label lbwWindSpeed;
+        private System.Windows.Forms.Label lbwWindDirection;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lbwTempUnit;
+        private System.Windows.Forms.Label lbwHumidUnit;
+        private System.Windows.Forms.Label lbwPressureUnit;
+        private System.Windows.Forms.Label lbwWindspeedUnit;
     }
 }

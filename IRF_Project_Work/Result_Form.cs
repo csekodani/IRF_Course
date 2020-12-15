@@ -48,7 +48,7 @@ namespace IRF_Project_Work
         public async void LoadWeatherData(string id, decimal lon, decimal lat, string city, int searchType,LangChooser lc,UnitChooser uc)
         {
             XmlDocument GotResponse = new XmlDocument();
-            switch (searchType)
+            switch (searchType)     //when button click - active textbox (searchType depends on it) gets validated and pass its value to Result_Form const 
             {
                 case 1:
                     GotResponse = await WeatherProcessor.LoadWeather(id, lc, uc);
@@ -62,8 +62,7 @@ namespace IRF_Project_Work
                 default:
                     break;
             }
-
-           // var GotResponse = await WeatherProcessor.LoadWeather(city,LangChooser.Hungarian,UnitChooser.Standard);
+          
             foreach (XmlElement element in GotResponse.LastChild)
             {   //LastChild is current the other oe is the format header
                 //on this level we have 11 nodes
@@ -136,11 +135,64 @@ namespace IRF_Project_Work
             
          }
 
-        public void DisplayWeather()
+        public void DisplayWeather()    //label setting- hardcoding
         {
-            //set all labels accourding to the data of the instance
-            // e.g.  label98.Text= resultWeather.Preassure
+            lbwID.Text = resultWeater.ID.ToString();
+            lbwID.Visible = true;
 
+            lbwName.Text = resultWeater.Name;
+            lbwName.Visible = true;
+
+            lbwLongitude.Text = resultWeater.Longitude.ToString();
+            lbwLongitude.Visible = true;
+
+            lbwLatitude.Text = resultWeater.Latitude.ToString();
+            lbwLatitude.Visible = true;
+
+            lbwCountry.Text = resultWeater.CountrySign;
+            lbwCountry.Visible = true;
+
+            lbwSunRise.Text = resultWeater.SunRise.ToString();
+            lbwSunRise.Visible = true;
+
+            lbwSunSet.Text = resultWeater.SunSet.ToString();
+            lbwSunSet.Visible = true;
+
+            lbwTemperature.Text = resultWeater.Temperature.ToString();
+            lbwTemperature.Visible = true;
+
+            lbwHumidity.Text = resultWeater.Humidity.ToString();
+            lbwHumidity.Visible = true;
+
+            lbwPressure.Text = resultWeater.Pressure.ToString();
+            lbwPressure.Visible = true;
+
+            lbwWindSpeed.Text = resultWeater.WindSpeed.ToString();
+            lbwWindSpeed.Visible = true;
+
+            lbwWindDirection.Text = resultWeater.WindDirection;
+            lbwWindDirection.Visible = true;
+
+            lbwCloud.Text = resultWeater.CloudName;
+            lbwCloud.Visible = true;
+
+            lbwVisibility.Text = resultWeater.Visibility.ToString();
+            lbwVisibility.Visible = true;
+
+            lbwLastUpdated.Text = resultWeater.LastUpdate.ToString();
+            lbwLastUpdated.Visible = true;
+
+            lbwTempUnit.Text = resultWeater.HumidityUnit;
+            lbwTempUnit.Visible = true;
+
+            lbwHumidUnit.Text = resultWeater.HumidityUnit;
+            lbwHumidUnit.Visible = true;
+
+            lbwPressureUnit.Text = resultWeater.PressureUnit;
+            lbwPressureUnit.Visible = true;
+
+            lbwWindspeedUnit.Text = resultWeater.WindSpeedUnit;
+            lbwWindspeedUnit.Visible = true;
         }
         public void DisplayNameDay()        //displays name on the label of the form
         {
@@ -212,7 +264,6 @@ namespace IRF_Project_Work
         {
 
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             foreach  (RateData item in Rates)
