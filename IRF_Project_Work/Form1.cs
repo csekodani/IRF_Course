@@ -184,20 +184,23 @@ namespace IRF_Project_Work
         {
             int i;
             bool numConvert = int.TryParse(textBox_ID.Text, out i);
-            if (string.IsNullOrWhiteSpace(textBox_ID.Text)&&textBox_ID.Visible)
+            if (string.IsNullOrWhiteSpace(textBox_ID.Text) && textBox_ID.Visible)
             {
                 e.Cancel = true;
-                
+
                 MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
             }
-            else if (!numConvert&&textBox_ID.Visible)
+            else if (!numConvert && textBox_ID.Visible)
             {
                 e.Cancel = true;
 
                 MessageBox.Show("A kitöltött érték nem szám!", "Kitöltés hiba", MessageBoxButtons.OK);
             }
-            
-            else { validToGo = true; }
+            else if (numConvert && textBox_ID.Visible && (!string.IsNullOrWhiteSpace(textBox_ID.Text)))
+            {
+                validToGo = true;
+            }
+            else { validToGo = false; }
         }
 
         private void textBox_Name_Validating(object sender, CancelEventArgs e)
@@ -215,7 +218,11 @@ namespace IRF_Project_Work
                 e.Cancel = true;
                 MessageBox.Show("Regex!", "Kitöltés hiba", MessageBoxButtons.OK);
             }
-            else { validToGo = true; }
+            else if(rg.IsMatch(textBox_Name.Text) && textBox_Name.Visible&& !string.IsNullOrWhiteSpace(textBox_Name.Text))
+            {
+                validToGo = true;
+            }
+            else { validToGo = false; }
         }
 
         private void textBox_Coord_Long_Validating(object sender, CancelEventArgs e)
@@ -236,8 +243,11 @@ namespace IRF_Project_Work
 
                 MessageBox.Show("A kitöltött értékek közt van nem szám érték!", "Kitöltés hiba", MessageBoxButtons.OK);
             }
-
-            else { validToGo = true; }
+            else if((latConvert && textBox_Coord_Lat.Visible) && (lonConvert && textBox_Coord_Long.Visible) && !(string.IsNullOrWhiteSpace(textBox_Coord_Lat.Text) && textBox_Coord_Lat.Visible) || (string.IsNullOrWhiteSpace(textBox_Coord_Long.Text) && textBox_Coord_Long.Visible))
+            {
+                validToGo = true;
+            }
+            else { validToGo = false; }
         }
     }
 }
