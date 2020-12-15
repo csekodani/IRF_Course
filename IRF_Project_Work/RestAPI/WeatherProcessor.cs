@@ -42,7 +42,7 @@ namespace IRF_Project_Work.RestAPI
             {
                 units = "standard";
             }
-            string url = $"http://api.openweathermap.org/data/2.5/weather?id={ id }&mode=xml&lang={ langMode }&units={ unit }&appid={ apiKey }";
+            string url = $"http://api.openweathermap.org/data/2.5/weather?id={ id }&mode=xml&lang={ langMode }&units={ units }&appid={ apiKey }";
             using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
                 {
                 string streamString;
@@ -91,7 +91,7 @@ namespace IRF_Project_Work.RestAPI
             {
                 units = "standard";
             }
-            string url = $"http://api.openweathermap.org/data/2.5/weather?lat={ latit }&lon={longit}&lang={ langMode }&mode=xml&units={ unit }&appid={ apiKey }";
+            string url = $"http://api.openweathermap.org/data/2.5/weather?lat={ latit }&lon={longit}&lang={ langMode }&mode=xml&units={ units }&appid={ apiKey }";
             using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
             {
                 string streamString;
@@ -139,12 +139,11 @@ namespace IRF_Project_Work.RestAPI
             {
                 langMode = "en";
             }
-            string url = $"http://api.openweathermap.org/data/2.5/weather?q={ City }&units={ unit }&lang={ langMode }&mode=xml&appid={ apiKey }";
+            string url = $"http://api.openweathermap.org/data/2.5/weather?q={ City }&units={ units }&lang={ langMode }&mode=xml&appid={ apiKey }";
             using (HttpResponseMessage response = await Api_Helper.ApiClient.GetAsync(url))
             {
                 string streamString;
-                // there is a neet to make functions return to xml to be able to pass results to form 2
-                //need to get response oout of using, because it will terminate everything in it when it is done
+                
                 if (response.IsSuccessStatusCode)
                 {
                     streamString= await response.Content.ReadAsStringAsync();

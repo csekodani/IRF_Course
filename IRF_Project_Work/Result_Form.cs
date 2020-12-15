@@ -48,21 +48,10 @@ namespace IRF_Project_Work
         public async void LoadWeatherData(string id, decimal lon, decimal lat, string city, int searchType,LangChooser lc,UnitChooser uc)
         {
             XmlDocument GotResponse = new XmlDocument();
-            switch (searchType)     //when button click - active textbox (searchType depends on it) gets validated and pass its value to Result_Form const 
-            {
-                case 1:
-                    GotResponse = await WeatherProcessor.LoadWeather(id, lc, uc);
-                    break;
-                case 2:
-                    GotResponse = await WeatherProcessor.LoadWeather(lat,lon, lc, uc);
-                    break;
-                case 3:
-                    GotResponse = await WeatherProcessor.LoadWeather(city, lc, uc);
-                    break;
-                default:
-                    break;
-            }
-          
+            if (searchType==1) GotResponse = await WeatherProcessor.LoadWeather(id, lc, uc);
+            else if (searchType==2) GotResponse = await WeatherProcessor.LoadWeather(lat, lon, lc, uc);
+            else if (searchType==3) GotResponse = await WeatherProcessor.LoadWeather(city, lc, uc);
+ 
             foreach (XmlElement element in GotResponse.LastChild)
             {   //LastChild is current the other oe is the format header
                 //on this level we have 11 nodes
