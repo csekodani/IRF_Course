@@ -125,6 +125,7 @@
             this.textBox_Name.Name = "textBox_Name";
             this.textBox_Name.Size = new System.Drawing.Size(100, 20);
             this.textBox_Name.TabIndex = 6;
+            this.textBox_Name.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Name_Validating);
             // 
             // btn_GO
             // 

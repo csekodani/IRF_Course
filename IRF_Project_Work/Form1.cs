@@ -10,6 +10,7 @@ using System.Text;
 using System.Drawing.Drawing2D;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace IRF_Project_Work
 {
@@ -181,21 +182,40 @@ namespace IRF_Project_Work
 
         private void textBox_ID_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox_ID.Text))
+            int i;
+            bool numConvert = int.TryParse(textBox_ID.Text, out i);
+            if (string.IsNullOrWhiteSpace(textBox_ID.Text)&&textBox_ID.Visible)
             {
                 e.Cancel = true;
                 
                 MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
             }
-            else { validToGo = true; }
-            int i;
-            bool numConvert = int.TryParse(textBox_ID.Text, out i);
-            if (!numConvert)
+            else if (!numConvert&&textBox_ID.Visible)
             {
                 e.Cancel = true;
 
                 MessageBox.Show("A kitöltött érték nem szám!", "Kitöltés hiba", MessageBoxButtons.OK);
             }
+            
+            else { validToGo = true; }
+        }
+
+        private void textBox_Name_Validating(object sender, CancelEventArgs e)
+        {
+            string pattern = @"[a-zA-Z]";
+            Regex rg = new Regex(pattern);
+            if (string.IsNullOrWhiteSpace(textBox_Name.Text)&&textBox_Name.Visible)
+            {
+                e.Cancel = true;
+
+                MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
+            }
+            else if(!rg.IsMatch(textBox_Name.Text)&&textBox_Name.Visible)
+            {
+                e.Cancel = true;
+                MessageBox.Show("Regex!", "Kitöltés hiba", MessageBoxButtons.OK);
+            }
+            else { validToGo = true; }
         }
     }
 }
