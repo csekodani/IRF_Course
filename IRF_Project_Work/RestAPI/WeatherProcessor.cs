@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml;
 
 namespace IRF_Project_Work.RestAPI
@@ -152,7 +153,9 @@ namespace IRF_Project_Work.RestAPI
                 }
                 else
                 {
-                    throw new Exception(response.ReasonPhrase);
+                    //MessageBox.Show(response.ReasonPhrase, "Hiba", MessageBoxButtons.OK);
+                    // throw new Exception(response.ReasonPhrase);
+                    return new XmlDocument();
                 }
             }
         }

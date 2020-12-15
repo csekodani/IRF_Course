@@ -53,75 +53,83 @@ namespace IRF_Project_Work
             if (searchType == 2) GotResponse = await WeatherProcessor.LoadWeather(lat, lon, lc, uc);
             if (searchType == 3) GotResponse = await WeatherProcessor.LoadWeather(city, lc, uc);
 
-            foreach (XmlElement element in GotResponse.LastChild)
-            {   //LastChild is current the other oe is the format header
-                //on this level we have 11 nodes
-                if (element.Name=="city")
-                {
-                    resultWeater.ID = int.Parse(element.GetAttribute("id"));
-                    resultWeater.Name = element.GetAttribute("name");
-                    foreach (XmlElement item in element)            // city has 4 childNodes - iterete through
+            if (GotResponse.LastChild != null)
+            {
+
+                foreach (XmlElement element in GotResponse.LastChild)
+                {   //LastChild is current the other oe is the format header
+                    //on this level we have 11 nodes
+                    if (element.Name == "city")
                     {
-                        if (item.Name=="coord")
+                        resultWeater.ID = int.Parse(element.GetAttribute("id"));
+                        resultWeater.Name = element.GetAttribute("name");
+                        foreach (XmlElement item in element)            // city has 4 childNodes - iterete through
                         {
-                            resultWeater.Longitude = decimal.Parse(item.GetAttribute("lon"));
-                            resultWeater.Latitude = decimal.Parse(item.GetAttribute("lat"));
-                        }
-                        if (item.Name=="country")
-                        {
-                            resultWeater.CountrySign = item.InnerText;
-                        }
-                        if (item.Name =="sun")
-                        {
-                            resultWeater.SunRise = DateTime.Parse(item.GetAttribute("rise"));
-                            resultWeater.SunSet = DateTime.Parse(item.GetAttribute("set"));
+                            if (item.Name == "coord")
+                            {
+                                resultWeater.Longitude = decimal.Parse(item.GetAttribute("lon"));
+                                resultWeater.Latitude = decimal.Parse(item.GetAttribute("lat"));
+                            }
+                            if (item.Name == "country")
+                            {
+                                resultWeater.CountrySign = item.InnerText;
+                            }
+                            if (item.Name == "sun")
+                            {
+                                resultWeater.SunRise = DateTime.Parse(item.GetAttribute("rise"));
+                                resultWeater.SunSet = DateTime.Parse(item.GetAttribute("set"));
+                            }
                         }
                     }
-                }
-                if (element.Name =="temperature")
-                {
-                    resultWeater.Temperature = decimal.Parse(element.GetAttribute("value"));
-                    resultWeater.TemperatureUnit = element.GetAttribute("unit");
-                }
-                if (element.Name == "humidity")
-                {
-                    resultWeater.Humidity = int.Parse(element.GetAttribute("value"));
-                    resultWeater.HumidityUnit = element.GetAttribute("unit");
-                }
-                if (element.Name == "pressure")
-                {
-                    resultWeater.Pressure = int.Parse(element.GetAttribute("value"));
-                    resultWeater.PressureUnit = element.GetAttribute("unit");
-                }
-                if (element.Name == "wind")
-                {
-                    foreach (XmlElement item in element)
+                    if (element.Name == "temperature")
                     {
-                        if (item.Name=="speed")
+                        resultWeater.Temperature = decimal.Parse(element.GetAttribute("value"));
+                        resultWeater.TemperatureUnit = element.GetAttribute("unit");
+                    }
+                    if (element.Name == "humidity")
+                    {
+                        resultWeater.Humidity = int.Parse(element.GetAttribute("value"));
+                        resultWeater.HumidityUnit = element.GetAttribute("unit");
+                    }
+                    if (element.Name == "pressure")
+                    {
+                        resultWeater.Pressure = int.Parse(element.GetAttribute("value"));
+                        resultWeater.PressureUnit = element.GetAttribute("unit");
+                    }
+                    if (element.Name == "wind")
+                    {
+                        foreach (XmlElement item in element)
                         {
-                            resultWeater.WindSpeed = decimal.Parse(item.GetAttribute("value"));
-                            resultWeater.WindSpeedUnit = item.GetAttribute("unit");
-                        }
-                        if (item.Name=="direction")
-                        {
-                            resultWeater.WindDirection = item.GetAttribute("name");
+                            if (item.Name == "speed")
+                            {
+                                resultWeater.WindSpeed = decimal.Parse(item.GetAttribute("value"));
+                                resultWeater.WindSpeedUnit = item.GetAttribute("unit");
+                            }
+                            if (item.Name == "direction")
+                            {
+                                resultWeater.WindDirection = item.GetAttribute("name");
+                            }
                         }
                     }
-                }
-                if (element.Name == "clouds")
-                {
-                    resultWeater.CloudName = element.GetAttribute("name");
-                }
-                if (element.Name == "visibility")
-                {
-                    resultWeater.Visibility = int.Parse(element.GetAttribute("value"));
-                }
-                if (element.Name=="lastupdate")
-                {
-                    resultWeater.LastUpdate = DateTime.Parse(element.GetAttribute("value"));
+                    if (element.Name == "clouds")
+                    {
+                        resultWeater.CloudName = element.GetAttribute("name");
+                    }
+                    if (element.Name == "visibility")
+                    {
+                        resultWeater.Visibility = int.Parse(element.GetAttribute("value"));
+                    }
+                    if (element.Name == "lastupdate")
+                    {
+                        resultWeater.LastUpdate = DateTime.Parse(element.GetAttribute("value"));
+                    }
                 }
             }
-
+            else
+            {
+                MessageBox.Show("Nem található ilyen adat, a bezárást követően próblája újra", "Hiba", MessageBoxButtons.OK);
+                this.Close();
+            }
             DisplayWeather();
          }
 

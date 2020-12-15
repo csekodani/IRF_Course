@@ -188,6 +188,14 @@ namespace IRF_Project_Work
                 MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
             }
             else { validToGo = true; }
+            int i;
+            bool numConvert = int.TryParse(textBox_ID.Text, out i);
+            if (!numConvert)
+            {
+                e.Cancel = true;
+
+                MessageBox.Show("A kitöltött érték nem szám!", "Kitöltés hiba", MessageBoxButtons.OK);
+            }
         }
     }
 }
