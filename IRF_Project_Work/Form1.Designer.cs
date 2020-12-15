@@ -117,6 +117,7 @@
             this.textBox_Coord_Long.Size = new System.Drawing.Size(73, 20);
             this.textBox_Coord_Long.TabIndex = 5;
             this.textBox_Coord_Long.Text = "Hosszúság";
+            this.textBox_Coord_Long.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Coord_Long_Validating);
             // 
             // textBox_Name
             // 

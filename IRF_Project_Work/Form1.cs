@@ -217,5 +217,27 @@ namespace IRF_Project_Work
             }
             else { validToGo = true; }
         }
+
+        private void textBox_Coord_Long_Validating(object sender, CancelEventArgs e)
+        {
+            decimal latI;
+            decimal lonI;
+            bool latConvert = decimal.TryParse(textBox_Coord_Lat.Text, out latI);
+            bool lonConvert = decimal.TryParse(textBox_Coord_Long.Text, out lonI);
+            if ((string.IsNullOrWhiteSpace(textBox_Coord_Lat.Text) && textBox_Coord_Lat.Visible) || (string.IsNullOrWhiteSpace(textBox_Coord_Long.Text) && textBox_Coord_Long.Visible))
+            { // at least one of them is empty
+                e.Cancel = true;
+
+                MessageBox.Show("A kiválasztott keresés mezeje üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
+            }
+            else if ((!latConvert && textBox_Coord_Lat.Visible) ||(!lonConvert && textBox_Coord_Long.Visible))
+            {
+                e.Cancel = true;
+
+                MessageBox.Show("A kitöltött értékek közt van nem szám érték!", "Kitöltés hiba", MessageBoxButtons.OK);
+            }
+
+            else { validToGo = true; }
+        }
     }
 }
