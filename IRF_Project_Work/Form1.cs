@@ -12,10 +12,14 @@ using System.Windows.Forms;
 
 namespace IRF_Project_Work
 {
+   
     public partial class Form1 : Form
     {
         LangChooser languageChoice = LangChooser.Hungarian;
         UnitChooser unitChoice = UnitChooser.Standard;
+        
+
+        
 
 
         public Form1()
@@ -31,7 +35,33 @@ namespace IRF_Project_Work
 
         private void btn_GO_Click(object sender, EventArgs e)
         {
-            Result_Form f1 = new Result_Form();        
+            decimal lon=0;
+            decimal lat=0;
+            string id="";
+            string name="";
+            int searchType = 0;
+            LangChooser lc = LangChooser.Hungarian;
+            UnitChooser uc = UnitChooser.Standard;
+            if (textBox_ID.Visible==true)
+            {
+                id = textBox_ID.Text;
+                searchType = 1;
+            }
+            if (textBox_Coord_Lat.Visible == true)
+            {
+                lon = decimal.Parse(textBox_Coord_Long.Text);
+                lat = decimal.Parse(textBox_Coord_Lat.Text);
+                searchType = 2;
+            }
+            if (textBox_Name.Visible==true)
+            {
+                name = textBox_Name.Text;
+                searchType = 3;
+            }
+            lc = languageChoice;
+            uc = unitChoice;
+
+            Result_Form f1 = new Result_Form(id,lon,lat,name,searchType,lc,uc);        
             f1.Show();
           
         }
@@ -61,8 +91,6 @@ namespace IRF_Project_Work
             textBox_Coord_Lat.Visible = false;
             textBox_Name.Visible = true;
         }
-
-        
 
         private void hunFlag_CBox_CheckedChanged(object sender, EventArgs e)
         {

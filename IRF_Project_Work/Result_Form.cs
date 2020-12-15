@@ -20,26 +20,50 @@ namespace IRF_Project_Work
         BindingList<RateData> Rates = new BindingList<RateData>();
         BindingList<NameDay> NameDays = new BindingList<NameDay>();
         Weather resultWeater = new Weather(); //instance that we will display and get data in
-        
 
-        public Result_Form()
-        {
+
+        //public Result_Form()
+        //{
             
+        //    InitializeComponent();
+        //    FillNameDayList();
+        //    GetCurrentExchangeRates();
+        //    DisplayNameDay();
+        //    LoadWeatherData();
+        //    DisplayWeather();
+        //    mnbRateDataGridView.DataSource = Rates;
+            
+        //}
+        public Result_Form(string id,decimal lon ,decimal lat,string city, int searchType, LangChooser lc, UnitChooser uc)
+        {
             InitializeComponent();
             FillNameDayList();
             GetCurrentExchangeRates();
             DisplayNameDay();
-            LoadWeatherData();
+            LoadWeatherData(id,lon,lat,city,searchType,lc,uc);
             DisplayWeather();
             mnbRateDataGridView.DataSource = Rates;
-            
-        }
-        public async void LoadWeatherData()
-        {
-            //run request, and get the response to resultWeather properties
-            //change function parameters with incoming data from user
 
-             var GotResponse = await WeatherProcessor.LoadWeather("Budapest",LangChooser.Hungarian,UnitChooser.Standard);
+        }
+        public async void LoadWeatherData(string id, decimal lon, decimal lat, string city, int searchType,LangChooser lc,UnitChooser uc)
+        {
+            XmlDocument GotResponse = new XmlDocument();
+            switch (searchType)
+            {
+                case 1:
+                    GotResponse = await WeatherProcessor.LoadWeather(id, lc, uc);
+                    break;
+                case 2:
+                    GotResponse = await WeatherProcessor.LoadWeather(lat,lon, lc, uc);
+                    break;
+                case 3:
+                    GotResponse = await WeatherProcessor.LoadWeather(city, lc, uc);
+                    break;
+                default:
+                    break;
+            }
+
+           // var GotResponse = await WeatherProcessor.LoadWeather(city,LangChooser.Hungarian,UnitChooser.Standard);
             foreach (XmlElement element in GotResponse.LastChild)
             {   //LastChild is current the other oe is the format header
                 //on this level we have 11 nodes
