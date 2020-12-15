@@ -106,6 +106,7 @@
             this.textBox_ID.Name = "textBox_ID";
             this.textBox_ID.Size = new System.Drawing.Size(100, 20);
             this.textBox_ID.TabIndex = 4;
+            this.textBox_ID.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_ID_Validating);
             // 
             // textBox_Coord_Long
             // 
@@ -260,6 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(636, 354);
             this.Controls.Add(this.textBox_Coord_Lat);
             this.Controls.Add(this.metric_Unit_CBox);

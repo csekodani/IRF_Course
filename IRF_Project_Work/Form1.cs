@@ -18,8 +18,8 @@ namespace IRF_Project_Work
     {
         LangChooser languageChoice = LangChooser.Hungarian;
         UnitChooser unitChoice = UnitChooser.Standard;
-
-        
+        bool validToGo = false;
+        private const int WM_CLOSE = 0x0010;
 
 
 
@@ -67,37 +67,49 @@ namespace IRF_Project_Work
 
         private void btn_GO_Click(object sender, EventArgs e)
         {
-            decimal lon=0;
-            decimal lat=0;
-            string id="";
-            string name="";
-            int searchType = 0;
-            LangChooser lc = LangChooser.Hungarian;
-            UnitChooser uc = UnitChooser.Standard;
-            if (textBox_ID.Visible==true)
+            ValidateChildren(ValidationConstraints.Enabled);
+            if (validToGo==true)
             {
-                id = textBox_ID.Text;
-                searchType = 1;
-            }
-            if (textBox_Coord_Lat.Visible == true)
-            {
-                lon = decimal.Parse(textBox_Coord_Long.Text);
-                lat = decimal.Parse(textBox_Coord_Lat.Text);
-                searchType = 2;
-            }
-            if (textBox_Name.Visible==true)
-            {
-                name = textBox_Name.Text;
-                searchType = 3;
-            }
-            lc = languageChoice;
-            uc = unitChoice;
 
-            Result_Form f1 = new Result_Form(id,lon,lat,name,searchType,lc,uc);        
-            f1.Show();
-          
+
+                decimal lon = 0;
+                decimal lat = 0;
+                string id = "";
+                string name = "";
+                int searchType = 0;
+                LangChooser lc = LangChooser.Hungarian;
+                UnitChooser uc = UnitChooser.Standard;
+                if (textBox_ID.Visible == true)
+                {
+                    id = textBox_ID.Text;
+                    searchType = 1;
+                }
+                if (textBox_Coord_Lat.Visible == true)
+                {
+                    lon = decimal.Parse(textBox_Coord_Long.Text);
+                    lat = decimal.Parse(textBox_Coord_Lat.Text);
+                    searchType = 2;
+                }
+                if (textBox_Name.Visible == true)
+                {
+                    name = textBox_Name.Text;
+                    searchType = 3;
+                }
+                lc = languageChoice;
+                uc = unitChoice;
+
+                Result_Form f1 = new Result_Form(id, lon, lat, name, searchType, lc, uc);
+                f1.Show();
+            }
         }
 
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == WM_CLOSE) // Attempting to close Form
+                AutoValidate = AutoValidate.Disable; //this stops (all) validations
+
+            base.WndProc(ref m);    //call the base method to handle other messages
+        }
         private void radioBtn_ID_CheckedChanged(object sender, EventArgs e)
         {
             textBox_ID.Visible = true;
@@ -165,6 +177,17 @@ namespace IRF_Project_Work
             if (imp_Unit_CBox.Checked) imp_Unit_CBox.Checked = false;
             if (stand_Unit_CBox.Checked) stand_Unit_CBox.Checked = false;
             unitChoice = UnitChooser.Metric;
+        }
+
+        private void textBox_ID_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox_ID.Text))
+            {
+                e.Cancel = true;
+                
+                MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
+            }
+            else { validToGo = true; }
         }
     }
 }
