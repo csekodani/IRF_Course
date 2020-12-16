@@ -306,6 +306,7 @@ namespace IRF_Project_Work
                     if (dec==i)
                     {
                         _controller.ExchangeManager.Exchanges.Remove(item);
+                        break;
                     }
                 }
                 else
@@ -313,6 +314,7 @@ namespace IRF_Project_Work
                     if (str == (string)dgwSaveExchange.CurrentCell.Value)
                     {
                         _controller.ExchangeManager.Exchanges.Remove(item);
+                        break;// cant handle modification of list in the middle of the foreach loop
                     }
                 }
             }

@@ -321,6 +321,7 @@
             this.mnbRateDataGridView.AllowUserToAddRows = false;
             this.mnbRateDataGridView.AllowUserToDeleteRows = false;
             this.mnbRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mnbRateDataGridView.GridColor = System.Drawing.Color.White;
             this.mnbRateDataGridView.Location = new System.Drawing.Point(481, 136);
             this.mnbRateDataGridView.Name = "mnbRateDataGridView";
             this.mnbRateDataGridView.ReadOnly = true;
@@ -626,12 +627,14 @@
             // 
             // dgwSaveExchange
             // 
+            this.dgwSaveExchange.AllowUserToAddRows = false;
             this.dgwSaveExchange.AllowUserToDeleteRows = false;
             this.dgwSaveExchange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwSaveExchange.Location = new System.Drawing.Point(910, 136);
+            this.dgwSaveExchange.GridColor = System.Drawing.Color.Silver;
+            this.dgwSaveExchange.Location = new System.Drawing.Point(913, 136);
             this.dgwSaveExchange.Name = "dgwSaveExchange";
             this.dgwSaveExchange.RowHeadersVisible = false;
-            this.dgwSaveExchange.Size = new System.Drawing.Size(206, 398);
+            this.dgwSaveExchange.Size = new System.Drawing.Size(203, 398);
             this.dgwSaveExchange.TabIndex = 47;
             // 
             // btnAddFavorites
