@@ -19,7 +19,7 @@ namespace IRF_Project_Work.Entities
 
             if (oldExchange != null)
                 throw new ApplicationException(
-                    "Már létezik felhasználó ilyen valuta a list'ban!");
+                    "Már létezik ilyen valuta a listában!");
 
             Exchanges.Add(exchange);
 

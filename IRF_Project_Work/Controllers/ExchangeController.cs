@@ -13,5 +13,20 @@ namespace IRF_Project_Work.Entities
         {
             ExchangeManager = new ExchangeManager();
         }
+
+        public RateData AddFavorites(string favorite, decimal value)
+        {
+            //validation of favorite
+
+            
+            var exchange = new RateData()
+            {
+                Currency = favorite,
+                Value = value
+            };
+
+            var newExchange = ExchangeManager.CreateExchange(exchange);
+            return newExchange;
+        }
     }
 }

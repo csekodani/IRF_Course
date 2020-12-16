@@ -321,9 +321,9 @@
             this.fxSearchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.fxSearchLabel.Location = new System.Drawing.Point(738, 339);
             this.fxSearchLabel.Name = "fxSearchLabel";
-            this.fxSearchLabel.Size = new System.Drawing.Size(67, 20);
+            this.fxSearchLabel.Size = new System.Drawing.Size(80, 20);
             this.fxSearchLabel.TabIndex = 23;
-            this.fxSearchLabel.Text = "label22";
+            this.fxSearchLabel.Text = "fxSearch";
             this.fxSearchLabel.Visible = false;
             // 
             // label22
@@ -580,10 +580,12 @@
             // 
             // dgwSaveExchange
             // 
+            this.dgwSaveExchange.AllowUserToDeleteRows = false;
             this.dgwSaveExchange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwSaveExchange.Location = new System.Drawing.Point(893, 136);
+            this.dgwSaveExchange.Location = new System.Drawing.Point(906, 136);
             this.dgwSaveExchange.Name = "dgwSaveExchange";
-            this.dgwSaveExchange.Size = new System.Drawing.Size(223, 398);
+            this.dgwSaveExchange.RowHeadersVisible = false;
+            this.dgwSaveExchange.Size = new System.Drawing.Size(210, 398);
             this.dgwSaveExchange.TabIndex = 47;
             // 
             // btnAddFavorites
@@ -594,6 +596,7 @@
             this.btnAddFavorites.TabIndex = 48;
             this.btnAddFavorites.Text = "->Hozzáadás ->";
             this.btnAddFavorites.UseVisualStyleBackColor = true;
+            this.btnAddFavorites.Click += new System.EventHandler(this.btnAddFavorites_Click);
             // 
             // btnSaveToFile
             // 

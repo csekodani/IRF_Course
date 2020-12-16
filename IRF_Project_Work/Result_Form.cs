@@ -259,5 +259,19 @@ namespace IRF_Project_Work
                 if (item.Currency == fxSearchTB.Text.ToUpper()) { fxSearchLabel.Visible = true; fxSearchLabel.Text = item.Value.ToString(); }
             }
         }
+
+        private void btnAddFavorites_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal value = decimal.Parse(fxSearchLabel.Text);
+                _controller.AddFavorites(fxSearchTB.Text.ToUpper(),value);
+                fxSearchTB.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
