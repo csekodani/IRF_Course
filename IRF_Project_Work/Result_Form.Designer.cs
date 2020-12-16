@@ -76,6 +76,8 @@
             this.lbwPressureUnit = new System.Windows.Forms.Label();
             this.lbwWindspeedUnit = new System.Windows.Forms.Label();
             this.dgwSaveExchange = new System.Windows.Forms.DataGridView();
+            this.btnAddFavorites = new System.Windows.Forms.Button();
+            this.btnSaveToFile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mnbRateDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwSaveExchange)).BeginInit();
             this.SuspendLayout();
@@ -275,7 +277,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label20.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label20.Location = new System.Drawing.Point(626, 21);
+            this.label20.Location = new System.Drawing.Point(454, 21);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(163, 31);
             this.label20.TabIndex = 19;
@@ -286,7 +288,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label21.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label21.Location = new System.Drawing.Point(517, 163);
+            this.label21.Location = new System.Drawing.Point(703, 21);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(298, 31);
             this.label21.TabIndex = 20;
@@ -297,17 +299,17 @@
             this.mnbRateDataGridView.AllowUserToAddRows = false;
             this.mnbRateDataGridView.AllowUserToDeleteRows = false;
             this.mnbRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.mnbRateDataGridView.Location = new System.Drawing.Point(689, 218);
+            this.mnbRateDataGridView.Location = new System.Drawing.Point(481, 136);
             this.mnbRateDataGridView.Name = "mnbRateDataGridView";
             this.mnbRateDataGridView.ReadOnly = true;
             this.mnbRateDataGridView.RowHeadersVisible = false;
-            this.mnbRateDataGridView.Size = new System.Drawing.Size(223, 425);
+            this.mnbRateDataGridView.Size = new System.Drawing.Size(223, 505);
             this.mnbRateDataGridView.TabIndex = 21;
             // 
             // fxSearchTB
             // 
             this.fxSearchTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.fxSearchTB.Location = new System.Drawing.Point(539, 286);
+            this.fxSearchTB.Location = new System.Drawing.Point(742, 299);
             this.fxSearchTB.Name = "fxSearchTB";
             this.fxSearchTB.Size = new System.Drawing.Size(100, 22);
             this.fxSearchTB.TabIndex = 22;
@@ -317,7 +319,7 @@
             // 
             this.fxSearchLabel.AutoSize = true;
             this.fxSearchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.fxSearchLabel.Location = new System.Drawing.Point(535, 326);
+            this.fxSearchLabel.Location = new System.Drawing.Point(738, 339);
             this.fxSearchLabel.Name = "fxSearchLabel";
             this.fxSearchLabel.Size = new System.Drawing.Size(67, 20);
             this.fxSearchLabel.TabIndex = 23;
@@ -328,7 +330,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label22.Location = new System.Drawing.Point(627, 326);
+            this.label22.Location = new System.Drawing.Point(830, 339);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(56, 20);
             this.label22.TabIndex = 24;
@@ -339,7 +341,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(519, 248);
+            this.label23.Location = new System.Drawing.Point(738, 263);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(120, 20);
             this.label23.TabIndex = 25;
@@ -350,7 +352,7 @@
             this.NevLabel.AutoSize = true;
             this.NevLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NevLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.NevLabel.Location = new System.Drawing.Point(685, 77);
+            this.NevLabel.Location = new System.Drawing.Point(513, 77);
             this.NevLabel.Name = "NevLabel";
             this.NevLabel.Size = new System.Drawing.Size(42, 22);
             this.NevLabel.TabIndex = 26;
@@ -579,16 +581,36 @@
             // dgwSaveExchange
             // 
             this.dgwSaveExchange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwSaveExchange.Location = new System.Drawing.Point(460, 413);
+            this.dgwSaveExchange.Location = new System.Drawing.Point(893, 136);
             this.dgwSaveExchange.Name = "dgwSaveExchange";
-            this.dgwSaveExchange.Size = new System.Drawing.Size(223, 150);
+            this.dgwSaveExchange.Size = new System.Drawing.Size(223, 398);
             this.dgwSaveExchange.TabIndex = 47;
+            // 
+            // btnAddFavorites
+            // 
+            this.btnAddFavorites.Location = new System.Drawing.Point(742, 378);
+            this.btnAddFavorites.Name = "btnAddFavorites";
+            this.btnAddFavorites.Size = new System.Drawing.Size(100, 31);
+            this.btnAddFavorites.TabIndex = 48;
+            this.btnAddFavorites.Text = "->Hozzáadás ->";
+            this.btnAddFavorites.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveToFile
+            // 
+            this.btnSaveToFile.Location = new System.Drawing.Point(959, 578);
+            this.btnSaveToFile.Name = "btnSaveToFile";
+            this.btnSaveToFile.Size = new System.Drawing.Size(91, 63);
+            this.btnSaveToFile.TabIndex = 49;
+            this.btnSaveToFile.Text = "Mentés";
+            this.btnSaveToFile.UseVisualStyleBackColor = true;
             // 
             // Result_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 657);
+            this.ClientSize = new System.Drawing.Size(1128, 657);
+            this.Controls.Add(this.btnSaveToFile);
+            this.Controls.Add(this.btnAddFavorites);
             this.Controls.Add(this.dgwSaveExchange);
             this.Controls.Add(this.lbwWindspeedUnit);
             this.Controls.Add(this.lbwPressureUnit);
@@ -697,5 +719,7 @@
         private System.Windows.Forms.Label lbwPressureUnit;
         private System.Windows.Forms.Label lbwWindspeedUnit;
         private System.Windows.Forms.DataGridView dgwSaveExchange;
+        private System.Windows.Forms.Button btnAddFavorites;
+        private System.Windows.Forms.Button btnSaveToFile;
     }
 }

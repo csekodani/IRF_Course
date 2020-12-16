@@ -19,7 +19,6 @@ namespace IRF_Project_Work
     {
         LangChooser languageChoice = LangChooser.Hungarian;
         UnitChooser unitChoice = UnitChooser.Standard;
-        bool validToGo = false;
         private const int WM_CLOSE = 0x0010;
 
 
@@ -69,9 +68,7 @@ namespace IRF_Project_Work
         private void btn_GO_Click(object sender, EventArgs e)
         {
             ValidateChildren(ValidationConstraints.Enabled);
-            if (validToGo==true)
-            {
-
+    
 
                 decimal lon = 0;
                 decimal lat = 0;
@@ -101,16 +98,16 @@ namespace IRF_Project_Work
 
                 Result_Form f1 = new Result_Form(id, lon, lat, name, searchType, lc, uc);
                 f1.Show();
-            }
+            
         }
 
-        protected override void WndProc(ref Message m)
-        {
-            if (m.Msg == WM_CLOSE) // Attempting to close Form
-                AutoValidate = AutoValidate.Disable; //this stops (all) validations
+        //protected override void WndProc(ref Message m)
+        //{
+        //    if (m.Msg == WM_CLOSE) // Attempting to close Form
+        //        AutoValidate = AutoValidate.Disable; //this stops (all) validations
 
-            base.WndProc(ref m);    //call the base method to handle other messages
-        }
+        //    base.WndProc(ref m);    //call the base method to handle other messages
+        //}
         private void radioBtn_ID_CheckedChanged(object sender, EventArgs e)
         {
             textBox_ID.Visible = true;
@@ -182,72 +179,72 @@ namespace IRF_Project_Work
 
         private void textBox_ID_Validating(object sender, CancelEventArgs e)
         {
-            int i;
-            bool numConvert = int.TryParse(textBox_ID.Text, out i);
-            if (string.IsNullOrWhiteSpace(textBox_ID.Text) && textBox_ID.Visible)
+            if (textBox_ID.Visible)
             {
-                e.Cancel = true;
+                int i;
+                bool numConvert = int.TryParse(textBox_ID.Text, out i);
+                if (string.IsNullOrWhiteSpace(textBox_ID.Text))
+                {
+                    e.Cancel = true;
 
-                MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
-            }
-            else if (!numConvert && textBox_ID.Visible)
-            {
-                e.Cancel = true;
+                    MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
+                }
+                else if (!numConvert)
+                {
+                    e.Cancel = true;
 
-                MessageBox.Show("A kitöltött érték nem szám!", "Kitöltés hiba", MessageBoxButtons.OK);
+                    MessageBox.Show("A kitöltött érték nem szám!", "Kitöltés hiba", MessageBoxButtons.OK);
+                }
+                
             }
-            else if (numConvert && textBox_ID.Visible && (!string.IsNullOrWhiteSpace(textBox_ID.Text)))
-            {
-                validToGo = true;
-            }
-            else { validToGo = false; }
+            
         }
 
         private void textBox_Name_Validating(object sender, CancelEventArgs e)
         {
-            string pattern = @"[a-zA-Z]";
-            Regex rg = new Regex(pattern);
-            if (string.IsNullOrWhiteSpace(textBox_Name.Text)&&textBox_Name.Visible)
+            if (textBox_Name.Visible)
             {
-                e.Cancel = true;
+                string pattern = @"[a-zA-Z]";
+                Regex rg = new Regex(pattern);
+                if (string.IsNullOrWhiteSpace(textBox_Name.Text))
+                {
+                    e.Cancel = true;
 
-                MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
+                    MessageBox.Show("A kiválasztott keresési mező üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
+                }
+                else if (!rg.IsMatch(textBox_Name.Text))
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("Regex!", "Kitöltés hiba", MessageBoxButtons.OK);
+                }
+               
             }
-            else if(!rg.IsMatch(textBox_Name.Text)&&textBox_Name.Visible)
-            {
-                e.Cancel = true;
-                MessageBox.Show("Regex!", "Kitöltés hiba", MessageBoxButtons.OK);
-            }
-            else if(rg.IsMatch(textBox_Name.Text) && textBox_Name.Visible&& !string.IsNullOrWhiteSpace(textBox_Name.Text))
-            {
-                validToGo = true;
-            }
-            else { validToGo = false; }
+            
         }
 
         private void textBox_Coord_Long_Validating(object sender, CancelEventArgs e)
         {
-            decimal latI;
-            decimal lonI;
-            bool latConvert = decimal.TryParse(textBox_Coord_Lat.Text, out latI);
-            bool lonConvert = decimal.TryParse(textBox_Coord_Long.Text, out lonI);
-            if ((string.IsNullOrWhiteSpace(textBox_Coord_Lat.Text) && textBox_Coord_Lat.Visible) || (string.IsNullOrWhiteSpace(textBox_Coord_Long.Text) && textBox_Coord_Long.Visible))
-            { // at least one of them is empty
-                e.Cancel = true;
-
-                MessageBox.Show("A kiválasztott keresés mezeje üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
-            }
-            else if ((!latConvert && textBox_Coord_Lat.Visible) ||(!lonConvert && textBox_Coord_Long.Visible))
+            if (textBox_Coord_Long.Visible)
             {
-                e.Cancel = true;
+                decimal latI;
+                decimal lonI;
+                bool latConvert = decimal.TryParse(textBox_Coord_Lat.Text, out latI);
+                bool lonConvert = decimal.TryParse(textBox_Coord_Long.Text, out lonI);
+                if (string.IsNullOrWhiteSpace(textBox_Coord_Lat.Text) || (string.IsNullOrWhiteSpace(textBox_Coord_Long.Text)))
+                { // at least one of them is empty
+                    e.Cancel = true;
 
-                MessageBox.Show("A kitöltött értékek közt van nem szám érték!", "Kitöltés hiba", MessageBoxButtons.OK);
+                    MessageBox.Show("A kiválasztott keresés mezeje üres, kérem töltse ki!", "Kitöltés hiba", MessageBoxButtons.OK);
+                }
+                else if ((!latConvert && textBox_Coord_Lat.Visible) || (!lonConvert && textBox_Coord_Long.Visible))
+                {
+                    e.Cancel = true;
+
+                    MessageBox.Show("A kitöltött értékek közt van nem szám érték!", "Kitöltés hiba", MessageBoxButtons.OK);
+                }
             }
-            else if((latConvert && textBox_Coord_Lat.Visible) && (lonConvert && textBox_Coord_Long.Visible) && !(string.IsNullOrWhiteSpace(textBox_Coord_Lat.Text) && textBox_Coord_Lat.Visible) || (string.IsNullOrWhiteSpace(textBox_Coord_Long.Text) && textBox_Coord_Long.Visible))
-            {
-                validToGo = true;
-            }
-            else { validToGo = false; }
+            
+            
         }
     }
 }
