@@ -188,7 +188,7 @@ namespace IRF_Project_Work
             lbwLastUpdated.Text = resultWeater.LastUpdate.ToString();
             lbwLastUpdated.Visible = true;
 
-            lbwTempUnit.Text = resultWeater.HumidityUnit;
+            lbwTempUnit.Text = resultWeater.TemperatureUnit;
             lbwTempUnit.Visible = true;
 
             lbwHumidUnit.Text = resultWeater.HumidityUnit;
