@@ -282,6 +282,8 @@
             // 
             // label19
             // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -294,6 +296,8 @@
             // 
             // label20
             // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -306,6 +310,8 @@
             // 
             // label21
             // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -320,6 +326,7 @@
             // 
             this.mnbRateDataGridView.AllowUserToAddRows = false;
             this.mnbRateDataGridView.AllowUserToDeleteRows = false;
+            this.mnbRateDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.mnbRateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.mnbRateDataGridView.GridColor = System.Drawing.Color.White;
             this.mnbRateDataGridView.Location = new System.Drawing.Point(481, 136);
@@ -328,9 +335,12 @@
             this.mnbRateDataGridView.RowHeadersVisible = false;
             this.mnbRateDataGridView.Size = new System.Drawing.Size(223, 505);
             this.mnbRateDataGridView.TabIndex = 21;
+            this.mnbRateDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.mnbRateDataGridView_CellClick);
+            this.mnbRateDataGridView.SelectionChanged += new System.EventHandler(this.mnbRateDataGridView_SelectionChanged);
             // 
             // fxSearchTB
             // 
+            this.fxSearchTB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.fxSearchTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.fxSearchTB.Location = new System.Drawing.Point(742, 299);
             this.fxSearchTB.Name = "fxSearchTB";
@@ -340,6 +350,7 @@
             // 
             // fxSearchLabel
             // 
+            this.fxSearchLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.fxSearchLabel.AutoSize = true;
             this.fxSearchLabel.BackColor = System.Drawing.Color.Transparent;
             this.fxSearchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -352,6 +363,7 @@
             // 
             // label22
             // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -363,6 +375,7 @@
             // 
             // label23
             // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -375,6 +388,8 @@
             // 
             // NevLabel
             // 
+            this.NevLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NevLabel.AutoSize = true;
             this.NevLabel.BackColor = System.Drawing.Color.Transparent;
             this.NevLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -629,6 +644,7 @@
             // 
             this.dgwSaveExchange.AllowUserToAddRows = false;
             this.dgwSaveExchange.AllowUserToDeleteRows = false;
+            this.dgwSaveExchange.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dgwSaveExchange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwSaveExchange.GridColor = System.Drawing.Color.Silver;
             this.dgwSaveExchange.Location = new System.Drawing.Point(913, 136);
@@ -639,6 +655,7 @@
             // 
             // btnAddFavorites
             // 
+            this.btnAddFavorites.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddFavorites.BackColor = System.Drawing.Color.Transparent;
             this.btnAddFavorites.Location = new System.Drawing.Point(742, 378);
             this.btnAddFavorites.Name = "btnAddFavorites";
@@ -650,6 +667,7 @@
             // 
             // btnSaveToFile
             // 
+            this.btnSaveToFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveToFile.Location = new System.Drawing.Point(959, 578);
             this.btnSaveToFile.Name = "btnSaveToFile";
             this.btnSaveToFile.Size = new System.Drawing.Size(91, 63);
@@ -660,6 +678,7 @@
             // 
             // deleteFromSaved
             // 
+            this.deleteFromSaved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteFromSaved.BackColor = System.Drawing.Color.Transparent;
             this.deleteFromSaved.Location = new System.Drawing.Point(742, 434);
             this.deleteFromSaved.Name = "deleteFromSaved";

@@ -268,9 +268,29 @@ namespace IRF_Project_Work
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            foreach  (RateData item in Rates)
+            //for some reason the textbox text property comes one function later...
+            mnbRateDataGridView.CurrentCell.Selected = false;
+            if (fxSearchTB.Text.Length == 3)
             {
-                if (item.Currency == fxSearchTB.Text.ToUpper()) { fxSearchLabel.Visible = true; fxSearchLabel.Text = item.Value.ToString(); }
+
+                int runner = 0;
+                
+                // runner without selection
+                foreach (RateData item in Rates)
+                {
+
+                    if (item.Currency == fxSearchTB.Text.ToUpper())
+                    {
+                        fxSearchLabel.Visible = true;
+                        fxSearchLabel.Text = item.Value.ToString();
+                        mnbRateDataGridView.ClearSelection();
+                        mnbRateDataGridView.Rows[runner].Cells[0].Selected = true;
+                        mnbRateDataGridView.CurrentCell = mnbRateDataGridView.Rows[runner].Cells[0];
+                        break;//found it
+                    }
+                    runner++;
+                   
+                }
             }
         }
 
@@ -341,6 +361,55 @@ namespace IRF_Project_Work
                     }
                 }
             }
+        }
+
+        private void mnbRateDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            if (mnbRateDataGridView.SelectedCells.Count == 1)
+            {
+                int ri= mnbRateDataGridView.SelectedCells[0].RowIndex;
+                mnbRateDataGridView.CurrentCell = mnbRateDataGridView.Rows[ri].Cells[0];
+                
+
+                foreach (RateData item in Rates)
+                {
+                    string str = item.Currency;
+                    decimal dec = item.Value;
+                    decimal i;
+                    
+                    if (decimal.TryParse(mnbRateDataGridView.CurrentCell.Value.ToString(), out i))
+                    {
+                        //if decimal than we go and search the item in the bindingList
+                        if (dec == i)
+                        {
+                            //then fx label set
+                            fxSearchTB.Text = item.Currency;
+                            fxSearchLabel.Text = item.Value.ToString();
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        if (str == (string)mnbRateDataGridView.CurrentCell.Value)
+                        {
+                            fxSearchTB.Text = item.Currency;
+                            fxSearchLabel.Text = item.Value.ToString();
+                            break;
+
+                        }
+                    }
+                    
+                }
+            }
+            else if (mnbRateDataGridView.SelectedCells.Count > 1)
+            {
+                MessageBox.Show("Túl sok kijelolt elem", "Hiba", MessageBoxButtons.OK);
+            }
+        }
+
+        private void mnbRateDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
