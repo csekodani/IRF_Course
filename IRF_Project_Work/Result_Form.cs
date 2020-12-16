@@ -244,8 +244,6 @@ namespace IRF_Project_Work
                 //element         - Day (has only 1 attribute (current date))
                 // element childNodes - Rate (every Rate is a node with attributes )
 
-                
-
                 foreach (XmlElement item in element.ChildNodes)
                 {
                     var rate = new RateData();
@@ -262,8 +260,6 @@ namespace IRF_Project_Work
                 }
                 
             }
-
-
 
         }
         private void Result_Form_Load(object sender, EventArgs e)
