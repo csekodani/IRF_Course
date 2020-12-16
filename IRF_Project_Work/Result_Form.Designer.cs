@@ -86,6 +86,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(46, 77);
             this.label1.Name = "label1";
@@ -96,6 +97,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(46, 116);
             this.label2.Name = "label2";
@@ -106,6 +108,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(46, 152);
             this.label3.Name = "label3";
@@ -116,6 +119,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(109, 177);
             this.label4.Name = "label4";
@@ -126,6 +130,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(114, 195);
             this.label5.Name = "label5";
@@ -136,6 +141,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(46, 225);
             this.label6.Name = "label6";
@@ -146,6 +152,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(46, 261);
             this.label7.Name = "label7";
@@ -156,6 +163,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.Location = new System.Drawing.Point(46, 299);
             this.label8.Name = "label8";
@@ -166,6 +174,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label9.Location = new System.Drawing.Point(46, 340);
             this.label9.Name = "label9";
@@ -176,6 +185,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.Location = new System.Drawing.Point(46, 378);
             this.label10.Name = "label10";
@@ -186,6 +196,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label11.Location = new System.Drawing.Point(46, 418);
             this.label11.Name = "label11";
@@ -196,6 +207,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.Location = new System.Drawing.Point(42, 462);
             this.label12.Name = "label12";
@@ -205,6 +217,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label13.Location = new System.Drawing.Point(144, 504);
             this.label13.Name = "label13";
@@ -215,6 +228,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label14.Location = new System.Drawing.Point(109, 487);
             this.label14.Name = "label14";
@@ -225,6 +239,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label15.Location = new System.Drawing.Point(46, 462);
             this.label15.Name = "label15";
@@ -235,6 +250,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label16.Location = new System.Drawing.Point(46, 541);
             this.label16.Name = "label16";
@@ -245,6 +261,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label17.Location = new System.Drawing.Point(44, 580);
             this.label17.Name = "label17";
@@ -255,6 +272,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label18.Location = new System.Drawing.Point(42, 621);
             this.label18.Name = "label18";
@@ -265,6 +283,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label19.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label19.Location = new System.Drawing.Point(88, 21);
@@ -276,6 +295,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label20.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label20.Location = new System.Drawing.Point(454, 21);
@@ -287,6 +307,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label21.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label21.Location = new System.Drawing.Point(703, 21);
@@ -319,6 +340,7 @@
             // fxSearchLabel
             // 
             this.fxSearchLabel.AutoSize = true;
+            this.fxSearchLabel.BackColor = System.Drawing.Color.Transparent;
             this.fxSearchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.fxSearchLabel.Location = new System.Drawing.Point(738, 339);
             this.fxSearchLabel.Name = "fxSearchLabel";
@@ -330,6 +352,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label22.Location = new System.Drawing.Point(830, 339);
             this.label22.Name = "label22";
@@ -340,6 +363,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label23.ForeColor = System.Drawing.Color.Black;
             this.label23.Location = new System.Drawing.Point(738, 263);
@@ -351,6 +375,7 @@
             // NevLabel
             // 
             this.NevLabel.AutoSize = true;
+            this.NevLabel.BackColor = System.Drawing.Color.Transparent;
             this.NevLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NevLabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.NevLabel.Location = new System.Drawing.Point(513, 77);
@@ -363,6 +388,7 @@
             // lbwID
             // 
             this.lbwID.AutoSize = true;
+            this.lbwID.BackColor = System.Drawing.Color.Transparent;
             this.lbwID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwID.Location = new System.Drawing.Point(239, 79);
             this.lbwID.Name = "lbwID";
@@ -374,6 +400,7 @@
             // lbwName
             // 
             this.lbwName.AutoSize = true;
+            this.lbwName.BackColor = System.Drawing.Color.Transparent;
             this.lbwName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwName.Location = new System.Drawing.Point(239, 118);
             this.lbwName.Name = "lbwName";
@@ -385,6 +412,7 @@
             // lbwCountry
             // 
             this.lbwCountry.AutoSize = true;
+            this.lbwCountry.BackColor = System.Drawing.Color.Transparent;
             this.lbwCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwCountry.Location = new System.Drawing.Point(239, 227);
             this.lbwCountry.Name = "lbwCountry";
@@ -396,6 +424,7 @@
             // lbwSunRise
             // 
             this.lbwSunRise.AutoSize = true;
+            this.lbwSunRise.BackColor = System.Drawing.Color.Transparent;
             this.lbwSunRise.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwSunRise.Location = new System.Drawing.Point(239, 261);
             this.lbwSunRise.Name = "lbwSunRise";
@@ -407,6 +436,7 @@
             // lbwSunSet
             // 
             this.lbwSunSet.AutoSize = true;
+            this.lbwSunSet.BackColor = System.Drawing.Color.Transparent;
             this.lbwSunSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwSunSet.Location = new System.Drawing.Point(239, 301);
             this.lbwSunSet.Name = "lbwSunSet";
@@ -418,6 +448,7 @@
             // lbwTemperature
             // 
             this.lbwTemperature.AutoSize = true;
+            this.lbwTemperature.BackColor = System.Drawing.Color.Transparent;
             this.lbwTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwTemperature.Location = new System.Drawing.Point(239, 342);
             this.lbwTemperature.Name = "lbwTemperature";
@@ -429,6 +460,7 @@
             // lbwHumidity
             // 
             this.lbwHumidity.AutoSize = true;
+            this.lbwHumidity.BackColor = System.Drawing.Color.Transparent;
             this.lbwHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwHumidity.Location = new System.Drawing.Point(239, 380);
             this.lbwHumidity.Name = "lbwHumidity";
@@ -440,6 +472,7 @@
             // lbwPressure
             // 
             this.lbwPressure.AutoSize = true;
+            this.lbwPressure.BackColor = System.Drawing.Color.Transparent;
             this.lbwPressure.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwPressure.Location = new System.Drawing.Point(239, 420);
             this.lbwPressure.Name = "lbwPressure";
@@ -451,6 +484,7 @@
             // lbwCloud
             // 
             this.lbwCloud.AutoSize = true;
+            this.lbwCloud.BackColor = System.Drawing.Color.Transparent;
             this.lbwCloud.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwCloud.Location = new System.Drawing.Point(239, 543);
             this.lbwCloud.Name = "lbwCloud";
@@ -462,6 +496,7 @@
             // lbwVisibility
             // 
             this.lbwVisibility.AutoSize = true;
+            this.lbwVisibility.BackColor = System.Drawing.Color.Transparent;
             this.lbwVisibility.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwVisibility.Location = new System.Drawing.Point(239, 582);
             this.lbwVisibility.Name = "lbwVisibility";
@@ -473,6 +508,7 @@
             // lbwLastUpdated
             // 
             this.lbwLastUpdated.AutoSize = true;
+            this.lbwLastUpdated.BackColor = System.Drawing.Color.Transparent;
             this.lbwLastUpdated.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwLastUpdated.Location = new System.Drawing.Point(239, 621);
             this.lbwLastUpdated.Name = "lbwLastUpdated";
@@ -484,6 +520,7 @@
             // lbwLongitude
             // 
             this.lbwLongitude.AutoSize = true;
+            this.lbwLongitude.BackColor = System.Drawing.Color.Transparent;
             this.lbwLongitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwLongitude.Location = new System.Drawing.Point(240, 176);
             this.lbwLongitude.Name = "lbwLongitude";
@@ -495,6 +532,7 @@
             // lbwLatitude
             // 
             this.lbwLatitude.AutoSize = true;
+            this.lbwLatitude.BackColor = System.Drawing.Color.Transparent;
             this.lbwLatitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwLatitude.Location = new System.Drawing.Point(240, 195);
             this.lbwLatitude.Name = "lbwLatitude";
@@ -506,6 +544,7 @@
             // lbwWindSpeed
             // 
             this.lbwWindSpeed.AutoSize = true;
+            this.lbwWindSpeed.BackColor = System.Drawing.Color.Transparent;
             this.lbwWindSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwWindSpeed.Location = new System.Drawing.Point(240, 488);
             this.lbwWindSpeed.Name = "lbwWindSpeed";
@@ -517,6 +556,7 @@
             // lbwWindDirection
             // 
             this.lbwWindDirection.AutoSize = true;
+            this.lbwWindDirection.BackColor = System.Drawing.Color.Transparent;
             this.lbwWindDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwWindDirection.Location = new System.Drawing.Point(240, 505);
             this.lbwWindDirection.Name = "lbwWindDirection";
@@ -528,6 +568,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label24.Location = new System.Drawing.Point(312, 578);
             this.label24.Name = "label24";
@@ -538,6 +579,7 @@
             // lbwTempUnit
             // 
             this.lbwTempUnit.AutoSize = true;
+            this.lbwTempUnit.BackColor = System.Drawing.Color.Transparent;
             this.lbwTempUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwTempUnit.Location = new System.Drawing.Point(312, 342);
             this.lbwTempUnit.Name = "lbwTempUnit";
@@ -549,6 +591,7 @@
             // lbwHumidUnit
             // 
             this.lbwHumidUnit.AutoSize = true;
+            this.lbwHumidUnit.BackColor = System.Drawing.Color.Transparent;
             this.lbwHumidUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwHumidUnit.Location = new System.Drawing.Point(312, 376);
             this.lbwHumidUnit.Name = "lbwHumidUnit";
@@ -560,6 +603,7 @@
             // lbwPressureUnit
             // 
             this.lbwPressureUnit.AutoSize = true;
+            this.lbwPressureUnit.BackColor = System.Drawing.Color.Transparent;
             this.lbwPressureUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwPressureUnit.Location = new System.Drawing.Point(312, 416);
             this.lbwPressureUnit.Name = "lbwPressureUnit";
@@ -571,6 +615,7 @@
             // lbwWindspeedUnit
             // 
             this.lbwWindspeedUnit.AutoSize = true;
+            this.lbwWindspeedUnit.BackColor = System.Drawing.Color.Transparent;
             this.lbwWindspeedUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbwWindspeedUnit.Location = new System.Drawing.Point(285, 489);
             this.lbwWindspeedUnit.Name = "lbwWindspeedUnit";
@@ -591,12 +636,13 @@
             // 
             // btnAddFavorites
             // 
+            this.btnAddFavorites.BackColor = System.Drawing.Color.Transparent;
             this.btnAddFavorites.Location = new System.Drawing.Point(742, 378);
             this.btnAddFavorites.Name = "btnAddFavorites";
             this.btnAddFavorites.Size = new System.Drawing.Size(100, 31);
             this.btnAddFavorites.TabIndex = 48;
             this.btnAddFavorites.Text = "->Hozzáadás ->";
-            this.btnAddFavorites.UseVisualStyleBackColor = true;
+            this.btnAddFavorites.UseVisualStyleBackColor = false;
             this.btnAddFavorites.Click += new System.EventHandler(this.btnAddFavorites_Click);
             // 
             // btnSaveToFile
@@ -611,12 +657,13 @@
             // 
             // deleteFromSaved
             // 
+            this.deleteFromSaved.BackColor = System.Drawing.Color.Transparent;
             this.deleteFromSaved.Location = new System.Drawing.Point(742, 434);
             this.deleteFromSaved.Name = "deleteFromSaved";
             this.deleteFromSaved.Size = new System.Drawing.Size(100, 28);
             this.deleteFromSaved.TabIndex = 50;
             this.deleteFromSaved.Text = "Törlés";
-            this.deleteFromSaved.UseVisualStyleBackColor = true;
+            this.deleteFromSaved.UseVisualStyleBackColor = false;
             this.deleteFromSaved.Click += new System.EventHandler(this.deleteFromSaved_Click);
             // 
             // Result_Form
@@ -676,7 +723,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Result_Form";
-            this.Text = "Service Result";
+            this.Text = "Friss Adatok";
             this.Load += new System.EventHandler(this.Result_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mnbRateDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwSaveExchange)).EndInit();

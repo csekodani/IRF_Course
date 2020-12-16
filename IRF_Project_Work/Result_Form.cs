@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -27,15 +28,31 @@ namespace IRF_Project_Work
         public Result_Form(string id,decimal lon ,decimal lat,string city, int searchType, LangChooser lc, UnitChooser uc)
         {
             InitializeComponent();
+            this.Paint += Result_Form_Paint;
             FillNameDayList();
             GetCurrentExchangeRates();
             DisplayNameDay();
             LoadWeatherData(id,lon,lat,city,searchType,lc,uc);
-            //DisplayWeather();
+            DisplayWeather();
             mnbRateDataGridView.DataSource = Rates;
             dgwSaveExchange.DataSource = _controller.ExchangeManager.Exchanges;
 
         }
+
+        private void Result_Form_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+
+            //the rectangle, the same size as our Form
+            Rectangle gradient_rectangle = new Rectangle(0, 0, Width, Height);
+
+            //define gradient's properties
+            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(57, 128, 227), Color.FromArgb(19, 54, 99), 65f);
+
+            //apply gradient         
+            graphics.FillRectangle(b, gradient_rectangle);
+        }
+
         public async void LoadWeatherData(string id, decimal lon, decimal lat, string city, int searchType,LangChooser lc,UnitChooser uc)
         {
             XmlDocument GotResponse = new XmlDocument();
