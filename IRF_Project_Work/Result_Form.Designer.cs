@@ -285,7 +285,7 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label19.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label19.Location = new System.Drawing.Point(88, 21);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(215, 31);
@@ -297,7 +297,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label20.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label20.Location = new System.Drawing.Point(454, 21);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(163, 31);
@@ -309,7 +309,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label21.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label21.Location = new System.Drawing.Point(703, 21);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(298, 31);
@@ -377,7 +377,7 @@
             this.NevLabel.AutoSize = true;
             this.NevLabel.BackColor = System.Drawing.Color.Transparent;
             this.NevLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NevLabel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.NevLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.NevLabel.Location = new System.Drawing.Point(513, 77);
             this.NevLabel.Name = "NevLabel";
             this.NevLabel.Size = new System.Drawing.Size(42, 22);
@@ -628,10 +628,10 @@
             // 
             this.dgwSaveExchange.AllowUserToDeleteRows = false;
             this.dgwSaveExchange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwSaveExchange.Location = new System.Drawing.Point(906, 136);
+            this.dgwSaveExchange.Location = new System.Drawing.Point(910, 136);
             this.dgwSaveExchange.Name = "dgwSaveExchange";
             this.dgwSaveExchange.RowHeadersVisible = false;
-            this.dgwSaveExchange.Size = new System.Drawing.Size(200, 398);
+            this.dgwSaveExchange.Size = new System.Drawing.Size(206, 398);
             this.dgwSaveExchange.TabIndex = 47;
             // 
             // btnAddFavorites

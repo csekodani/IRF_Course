@@ -290,7 +290,32 @@ namespace IRF_Project_Work
 
         private void deleteFromSaved_Click(object sender, EventArgs e)
         {
+            if (_controller.ExchangeManager.Exchanges.Count==0)
+            {
+                MessageBox.Show("Nincs törölhető elem", "Elem nem található", MessageBoxButtons.OK);
+            }
             //törlés
+            foreach (RateData item in _controller.ExchangeManager.Exchanges)
+            {
+                string str = item.Currency;
+                decimal dec = item.Value;
+                decimal i;
+                if (decimal.TryParse(dgwSaveExchange.CurrentCell.Value.ToString(), out i))
+                {
+                    //if decimal than we go and search the item in the bindingList
+                    if (dec==i)
+                    {
+                        _controller.ExchangeManager.Exchanges.Remove(item);
+                    }
+                }
+                else
+                {
+                    if (str == (string)dgwSaveExchange.CurrentCell.Value)
+                    {
+                        _controller.ExchangeManager.Exchanges.Remove(item);
+                    }
+                }
+            }
         }
 
         private void btnSaveToFile_Click(object sender, EventArgs e)
@@ -299,6 +324,8 @@ namespace IRF_Project_Work
             SaveFileDialog sf = new SaveFileDialog();
             sf.Title = "Kedvencek mentése";
             sf.DefaultExt = "csv";
+            sf.Filter = "CSV Files (*.csv)|*csv";
+
             
 
             if (sf.ShowDialog() == DialogResult.OK)
