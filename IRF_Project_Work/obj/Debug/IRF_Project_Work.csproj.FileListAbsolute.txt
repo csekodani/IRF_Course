@@ -42,3 +42,11 @@ C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\System.Net.
 C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\obj\Debug\IRF_Project_Work.csproj.CopyComplete
+C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\nunit.engine.dll
+C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\nunit.engine.api.dll
+C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\nunit.engine.core.dll
+C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\nunit.framework.dll
+C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\nunit.framework.pdb
+C:\Users\Cs_Dani\source\repos\IRF_Project\IRF_Project_Work\bin\Debug\nunit.framework.xml
