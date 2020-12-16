@@ -101,13 +101,13 @@ namespace IRF_Project_Work
             
         }
 
-        //protected override void WndProc(ref Message m)
-        //{
-        //    if (m.Msg == WM_CLOSE) // Attempting to close Form
-        //        AutoValidate = AutoValidate.Disable; //this stops (all) validations
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == WM_CLOSE) // Attempting to close Form
+                AutoValidate = AutoValidate.Disable; //this stops (all) validations
 
-        //    base.WndProc(ref m);    //call the base method to handle other messages
-        //}
+            base.WndProc(ref m);    //call the base method to handle other messages
+        }
         private void radioBtn_ID_CheckedChanged(object sender, EventArgs e)
         {
             textBox_ID.Visible = true;
