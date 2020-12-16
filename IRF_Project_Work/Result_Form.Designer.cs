@@ -78,6 +78,7 @@
             this.dgwSaveExchange = new System.Windows.Forms.DataGridView();
             this.btnAddFavorites = new System.Windows.Forms.Button();
             this.btnSaveToFile = new System.Windows.Forms.Button();
+            this.deleteFromSaved = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mnbRateDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwSaveExchange)).BeginInit();
             this.SuspendLayout();
@@ -585,7 +586,7 @@
             this.dgwSaveExchange.Location = new System.Drawing.Point(906, 136);
             this.dgwSaveExchange.Name = "dgwSaveExchange";
             this.dgwSaveExchange.RowHeadersVisible = false;
-            this.dgwSaveExchange.Size = new System.Drawing.Size(210, 398);
+            this.dgwSaveExchange.Size = new System.Drawing.Size(200, 398);
             this.dgwSaveExchange.TabIndex = 47;
             // 
             // btnAddFavorites
@@ -606,12 +607,24 @@
             this.btnSaveToFile.TabIndex = 49;
             this.btnSaveToFile.Text = "Mentés";
             this.btnSaveToFile.UseVisualStyleBackColor = true;
+            this.btnSaveToFile.Click += new System.EventHandler(this.btnSaveToFile_Click);
+            // 
+            // deleteFromSaved
+            // 
+            this.deleteFromSaved.Location = new System.Drawing.Point(742, 434);
+            this.deleteFromSaved.Name = "deleteFromSaved";
+            this.deleteFromSaved.Size = new System.Drawing.Size(100, 28);
+            this.deleteFromSaved.TabIndex = 50;
+            this.deleteFromSaved.Text = "Törlés";
+            this.deleteFromSaved.UseVisualStyleBackColor = true;
+            this.deleteFromSaved.Click += new System.EventHandler(this.deleteFromSaved_Click);
             // 
             // Result_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1128, 657);
+            this.Controls.Add(this.deleteFromSaved);
             this.Controls.Add(this.btnSaveToFile);
             this.Controls.Add(this.btnAddFavorites);
             this.Controls.Add(this.dgwSaveExchange);
@@ -724,5 +737,6 @@
         private System.Windows.Forms.DataGridView dgwSaveExchange;
         private System.Windows.Forms.Button btnAddFavorites;
         private System.Windows.Forms.Button btnSaveToFile;
+        private System.Windows.Forms.Button deleteFromSaved;
     }
 }

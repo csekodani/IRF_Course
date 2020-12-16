@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -271,6 +272,32 @@ namespace IRF_Project_Work
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void deleteFromSaved_Click(object sender, EventArgs e)
+        {
+            //törlés
+        }
+
+        private void btnSaveToFile_Click(object sender, EventArgs e)
+        {
+            
+            SaveFileDialog sf = new SaveFileDialog();
+            sf.Title = "Kedvencek mentése";
+            sf.DefaultExt = "csv";
+            
+
+            if (sf.ShowDialog() == DialogResult.OK)
+            {
+
+                using (StreamWriter outputFile = new StreamWriter(sf.FileName))
+                {
+                    foreach (var item in _controller.ExchangeManager.Exchanges)
+                    {
+                        outputFile.WriteLine(item.Currency+","+item.Value.ToString());
+                    }
+                }
             }
         }
     }
