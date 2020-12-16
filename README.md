@@ -1,4 +1,5 @@
 # IRF_Project
 A projekt egy REST API segitségével fog lekérni időjárás adatokat XML formátumban, melyekben a használt nyelvet, mértékegységet, illetve a lekérés módját a felhasználó választhatja. A lekérdezés módja lehet ID, Városnév és koordináták is. 
-Továbbá egy névnap és egy Forint árfolyam figyelő is beépitésre kerül. A névnap egy XML file ból az árfolyamfigyelő pedig SOAP web Service-n keresztül. A göretés mellett keresési lehetőségünk is van a valuták között.
+Továbbá egy névnap és egy Forint árfolyam figyelő is beépitésre kerül. A névnap egy XML file ból az árfolyamfigyelő pedig SOAP web Service-n keresztül. A göretés mellett keresési lehetőségünk is van a valuták között. Illetve menteni is tudjuk a kedvenc értékeinket amit a keresés kattintásos és beirásos módjával is feltölthetünk (adott esetben törölhetünk). Mindezen mentést alapértelmezetten CSV file ba tehetjük meg egy SaveFileDialog segitségével.
 Az applikáció célja, hogy egy olyan alkalmazása lehessen a felhasználóknak, mely segitségével lokális és hasznos adatokat szerezhet minden reggel, napja megkezdése előtt, vagy épp a másnapra való felkészüléskor.
+Personal apiKEY hardcode-olva van a kódban, sajnos máshogy nem tudtam a pontozó kollégák tudomására hozni. Ez természetesen egy ingyenes licence napi limitértékkel.
